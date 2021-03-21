@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.List;
 public class City {
     private String name;
     private String country;
-    private List<BikeStation> bikeStations = new ArrayList<BikeStation>();
+    private List<Station> bikeStations = new ArrayList<Station>();
 
-    public void addBikeStation(BikeStation bikeStation) {
+    public void addStation(Station bikeStation) {
         this.bikeStations.add(bikeStation);
     }
 
@@ -28,11 +28,11 @@ public class City {
         this.country = country;
     }
 
-    public List<BikeStation> getBikeStations() {
+    public List<Station> getStations() {
         return bikeStations;
     }
 
-    public void setBikeStations(List<BikeStation> bikeStations) {
+    public void setStations(List<Station> bikeStations) {
         this.bikeStations = bikeStations;
     }
 }

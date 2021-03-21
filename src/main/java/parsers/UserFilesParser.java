@@ -1,22 +1,22 @@
-package reader;
+package parsers;
 
-import Models.BikeStation;
-import Models.City;
-import RDFGenerator.RDFGenerator;
+import models.Station;
+import models.City;
+import rdfmaker.RdfMaker;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Reader {
+public class UserFilesParser  {
 
     /* Method that return all file names from a selected directory
     * taken from Stackoverflow */
-    public List<String> listFilesForFolder(final File folder) {
-        List<String> files = new ArrayList();
+    public List<String> getFolderFiles(final File folder) {
+        List<String> files = new ArrayList<String>();
         for (final File fileEntry : folder.listFiles()) {
             if (fileEntry.isDirectory()) {
-                listFilesForFolder(fileEntry);
+                getFolderFiles(fileEntry);
             } else {
                 files.add(fileEntry.getName());
             }
@@ -25,7 +25,7 @@ public class Reader {
     }
 
     public void csvParser (List<String> files) {
-        RDFGenerator rdfGenerator = new RDFGenerator();
+        RdfMaker rdfmaker = new RdfMaker();
 
         for (int i = 0; i < files.size(); i++) {
             String csvFile = files.get(i);
@@ -38,7 +38,7 @@ public class Reader {
             city.setCountry(cityNameCountry[0]);
             city.setName(cityNameCountry[1].replace(".txt", ""));
 
-            List<BikeStation> bikeStations = new ArrayList<BikeStation>();
+            List<Station> bikeStations = new ArrayList<Station>();
 
             try {
                 String directory = System.getProperty("user.dir") + "/Manually-added-files/";
@@ -46,7 +46,7 @@ public class Reader {
                 while ((line = br.readLine()) != null) {
                     String[] cityInfo = line.split(csvSplitBy);
 
-                    BikeStation bikeStation = new BikeStation();
+                    Station bikeStation = new Station();
                     bikeStation.setName(cityInfo[0]);
                     bikeStation.setLattitude(cityInfo[1].replace(" ", ""));
                     bikeStation.setLongitude(cityInfo[2].replace(" ", ""));
@@ -57,10 +57,10 @@ public class Reader {
 
                     bikeStations.add(bikeStation);
                 }
-                city.setBikeStations(bikeStations);
+                city.setStations(bikeStations);
 
                 /* Create RDF */
-                rdfGenerator.generateRDF(city);
+                rdfmaker.generateRDF(city);
             }
             catch (FileNotFoundException e) {
                 e.printStackTrace();

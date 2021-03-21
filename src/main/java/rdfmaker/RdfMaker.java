@@ -1,7 +1,7 @@
-package RdfMaker;
+package rdfmaker;
 
-import Constants.Constants;
-import Models.City;
+import consts.Consts;
+import models.City;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
@@ -31,8 +31,8 @@ public class RdfMaker {
         Property countryProp = m.createProperty(dbo + "country");
         Property labelProp = m.createProperty(rdfs + "label");
         Property bikeStationsProp = m.createProperty(ex + "bikeStations");
-        Property[] bikeStationProp = new Property[city.getBikeStations().size()];
-        for (int i = 0; i < city.getBikeStations().size(); i++) {
+        Property[] bikeStationProp = new Property[city.getStations().size()];
+        for (int i = 0; i < city.getStations().size(); i++) {
             bikeStationProp[i] = m.createProperty(ex + city.getName() + (i + 1));
         }
 
@@ -60,7 +60,7 @@ public class RdfMaker {
 //        rdfs:label  "Montpellier";
 //        dbo:country "France";
 //        ex:bikeStations ex:Montpellier1, ex:Montpellier2, ex:Montpellier3 .
-        for (int i = 0; i < city.getBikeStations().size(); i++) {
+        for (int i = 0; i < city.getStations().size(); i++) {
             cityRsrc.addProperty(bikeStationsProp, bikeStationProp[i]);
         }
 
@@ -75,34 +75,34 @@ public class RdfMaker {
 //        ex:free  4;
 //        ex:total  20;
 //        ex:cardPaiement 1 .
-        for (int i = 0; i < city.getBikeStations().size(); i++) {
+        for (int i = 0; i < city.getStations().size(); i++) {
             Resource bikeStationRsrc = m.createResource(ex + city.getName() + (i + 1))
                     .addProperty(typeProp, bicycleSharingProp);
 
             bikeStationRsrc.addProperty(cityProp, city.getName());
-            if (city.getBikeStations().get(i).getName() != null) {
-                bikeStationRsrc.addProperty(labelProp, city.getBikeStations().get(i).getName());
+            if (city.getStations().get(i).getName() != null) {
+                bikeStationRsrc.addProperty(labelProp, city.getStations().get(i).getName());
             }
-//            if (city.getBikeStations().get(i).getId() != null) {
-//                bikeStationRsrc.addProperty(idProp, city.getBikeStations().get(i).getId());
+//            if (city.getStations().get(i).getId() != null) {
+//                bikeStationRsrc.addProperty(idProp, city.getStations().get(i).getId());
 //            }
-            if (city.getBikeStations().get(i).getLattitude() != null) {
-                bikeStationRsrc.addProperty(latProp, m.createTypedLiteral(new BigDecimal(city.getBikeStations().get(i).getLattitude())));
+            if (city.getStations().get(i).getLattitude() != null) {
+                bikeStationRsrc.addProperty(latProp, m.createTypedLiteral(new BigDecimal(city.getStations().get(i).getLattitude())));
             }
-            if (city.getBikeStations().get(i).getLongitude() != null) {
-                bikeStationRsrc.addProperty(longProp,  m.createTypedLiteral(new BigDecimal(city.getBikeStations().get(i).getLongitude())));
+            if (city.getStations().get(i).getLongitude() != null) {
+                bikeStationRsrc.addProperty(longProp,  m.createTypedLiteral(new BigDecimal(city.getStations().get(i).getLongitude())));
             }
-            if (city.getBikeStations().get(i).getAvailable() != null) {
-                bikeStationRsrc.addProperty(availableProp, city.getBikeStations().get(i).getAvailable());
+            if (city.getStations().get(i).getAvailable() != null) {
+                bikeStationRsrc.addProperty(availableProp, city.getStations().get(i).getAvailable());
             }
-            if (city.getBikeStations().get(i).getFree() != null) {
-                bikeStationRsrc.addProperty(freeProp, city.getBikeStations().get(i).getFree());
+            if (city.getStations().get(i).getFree() != null) {
+                bikeStationRsrc.addProperty(freeProp, city.getStations().get(i).getFree());
             }
-            if (city.getBikeStations().get(i).getTotal() != null) {
-                bikeStationRsrc.addProperty(totalProp, city.getBikeStations().get(i).getTotal());
+            if (city.getStations().get(i).getTotal() != null) {
+                bikeStationRsrc.addProperty(totalProp, city.getStations().get(i).getTotal());
             }
-            if (city.getBikeStations().get(i).getCardPaiement() != null) {
-                bikeStationRsrc.addProperty(cardPaiementProp, city.getBikeStations().get(i).getCardPaiement());
+            if (city.getStations().get(i).getCardPaiement() != null) {
+                bikeStationRsrc.addProperty(cardPaiementProp, city.getStations().get(i).getCardPaiement());
             }
             else {
                 bikeStationRsrc.addProperty(cardPaiementProp, "0");
@@ -122,7 +122,7 @@ public class RdfMaker {
             }
         }
 
-        RDFConnection conn = RDFConnectionFactory.connect(Constants.triplestore);
+        RDFConnection conn = RDFConnectionFactory.connect(Consts.triplestore);
         conn.load("turtle-files/" + city.getName() + ".ttl");
         conn.close();
     }

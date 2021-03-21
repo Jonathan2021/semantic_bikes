@@ -1,8 +1,8 @@
 package parsers;
 
-import Models.BikeStation;
-import Models.City;
-import RDFGenerator.RDFGenerator;
+import models.Station;
+import models.City;
+import rdfmaker.RdfMaker;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -22,7 +22,7 @@ public class CityParser {
     public void jsonParser (String sURL, String cityName, String country) {
         // Connect to the URL using java's native library
         try {
-            RDFGenerator rdfGenerator = new RDFGenerator();
+            RdfMaker rdfmaker = new RdfMaker();
 
             URL url = new URL(sURL);
             URLConnection request = url.openConnection();
@@ -51,7 +51,7 @@ public class CityParser {
             while (itr2.hasNext()) {
                 Map feature = ((Map) itr2.next());
                 Map properties = (Map) feature.get("properties");
-                BikeStation bikeStation = new BikeStation();
+                Station bikeStation = new Station();
                 bikeStation.setName((String)properties.get("name"));
                 bikeStation.setId((String)properties.get("number"));
                 bikeStation.setLattitude((String)properties.get("lat"));
@@ -65,10 +65,10 @@ public class CityParser {
                 else if (((String)properties.get("banking")).equals("true")) {
                     bikeStation.setCardPaiement("1");
                 }
-                city.addBikeStation(bikeStation);
+                city.addStation(bikeStation);
             }
 
-//        for (BikeStation bikeStation : lyon.getBikeStations()) {
+//        for (Station bikeStation : lyon.getStations()) {
 //            System.out.println("Name : "+bikeStation.getName());
 //            System.out.println("Id : "+bikeStation.getId());
 //            System.out.println("Lattitude : "+bikeStation.getLattitude());
@@ -79,7 +79,7 @@ public class CityParser {
 //            System.out.println("Card Paiement : "+bikeStation.getCardPaiement()+"\n\n");
 //        }
 
-            rdfGenerator.generateRDF(city);
+            rdfmaker.generateRDF(city);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -91,7 +91,7 @@ public class CityParser {
     public void jsonParserV2 (String sURL, String cityName, String country){
         // Connect to the URL using java's native library
         try {
-            RDFGenerator rdfGenerator = new RDFGenerator();
+            RdfMaker rdfmaker = new RdfMaker();
 
             URL url = new URL(sURL);
             URLConnection request = url.openConnection();
@@ -116,7 +116,7 @@ public class CityParser {
             while (itr.hasNext()) {
                 Map feature = ((Map) itr.next());
                 Map properties = (Map) feature.get("fields");
-                BikeStation bikeStation = new BikeStation();
+                Station bikeStation = new Station();
                 bikeStation.setName((String)properties.get("nom"));
                 bikeStation.setId((String)feature.get("recordid"));
                 bikeStation.setTotal(String.valueOf(properties.get("nombreemplacementsactuels")));
@@ -127,10 +127,10 @@ public class CityParser {
                 bikeStation.setLattitude(String.valueOf(coordinates.get(1)));
                 bikeStation.setLongitude(String.valueOf(coordinates.get(0)));
                 bikeStation.setCardPaiement("0");
-                city.addBikeStation(bikeStation);
+                city.addStation(bikeStation);
             }
 
-//        for (BikeStation bikeStation : lyon.getBikeStations()) {
+//        for (Station bikeStation : lyon.getStations()) {
 //            System.out.println("Name : "+bikeStation.getName());
 //            System.out.println("Id : "+bikeStation.getId());
 //            System.out.println("Lattitude : "+bikeStation.getLattitude());
@@ -141,7 +141,7 @@ public class CityParser {
 //            System.out.println("Card Paiement : "+bikeStation.getCardPaiement()+"\n\n");
 //        }
 
-            rdfGenerator.generateRDF(city);
+            rdfmaker.generateRDF(city);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -153,7 +153,7 @@ public class CityParser {
     public void jsonParserV3 (String sURL, String cityName, String country){
         // Connect to the URL using java's native library
         try {
-            RDFGenerator rdfGenerator = new RDFGenerator();
+            RdfMaker rdfmaker = new RdfMaker();
 
             URL url = new URL(sURL);
             URLConnection request = url.openConnection();
@@ -178,7 +178,7 @@ public class CityParser {
             while (itr.hasNext()) {
                 Map feature = ((Map) itr.next());
                 Map properties = (Map) feature.get("fields");
-                BikeStation bikeStation = new BikeStation();
+                Station bikeStation = new Station();
                 bikeStation.setName((String)properties.get("name"));
                 bikeStation.setId((String)feature.get("recordid"));
                 bikeStation.setTotal(String.valueOf(properties.get("capacity")));
@@ -188,10 +188,10 @@ public class CityParser {
                 bikeStation.setLattitude(String.valueOf(coordinates.get(0)));
                 bikeStation.setLongitude(String.valueOf(coordinates.get(1)));
                 bikeStation.setCardPaiement("0");
-                city.addBikeStation(bikeStation);
+                city.addStation(bikeStation);
             }
 
-//        for (BikeStation bikeStation : lyon.getBikeStations()) {
+//        for (Station bikeStation : lyon.getStations()) {
 //            System.out.println("Name : "+bikeStation.getName());
 //            System.out.println("Id : "+bikeStation.getId());
 //            System.out.println("Lattitude : "+bikeStation.getLattitude());
@@ -202,7 +202,7 @@ public class CityParser {
 //            System.out.print  ln("Card Paiement : "+bikeStation.getCardPaiement()+"\n\n");
 //        }
 
-            rdfGenerator.generateRDF(city);
+            rdfmaker.generateRDF(city);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -214,7 +214,7 @@ public class CityParser {
     public void jsonParserV4 (String sURL, String cityName, String country){
         // Connect to the URL using java's native library
         try {
-            RDFGenerator rdfGenerator = new RDFGenerator();
+            RdfMaker rdfmaker = new RdfMaker();
 
             URL url = new URL(sURL);
             URLConnection request = url.openConnection();
@@ -239,7 +239,7 @@ public class CityParser {
             while (itr.hasNext()) {
                 Map feature = ((Map) itr.next());
                 Map properties = (Map) feature.get("properties");
-                BikeStation bikeStation = new BikeStation();
+                Station bikeStation = new Station();
                 bikeStation.setName((String)properties.get("NOM_VOIE"));
                 bikeStation.setId(String.valueOf(feature.get("id")));
                 bikeStation.setTotal(String.valueOf(properties.get("NBR_PT_ACC")));
@@ -250,10 +250,10 @@ public class CityParser {
                 bikeStation.setLattitude(String.valueOf(coordinates.get(1)));
                 bikeStation.setLongitude(String.valueOf(coordinates.get(0)));
                 bikeStation.setCardPaiement("0");
-                city.addBikeStation(bikeStation);
+                city.addStation(bikeStation);
             }
 
-//        for (BikeStation bikeStation : lyon.getBikeStations()) {
+//        for (Station bikeStation : lyon.getStations()) {
 //            System.out.println("Name : "+bikeStation.getName());
 //            System.out.println("Id : "+bikeStation.getId());
 //            System.out.println("Lattitude : "+bikeStation.getLattitude());
@@ -264,7 +264,7 @@ public class CityParser {
 //            System.out.println("Card Paiement : "+bikeStation.getCardPaiement()+"\n\n");
 //        }
 
-            rdfGenerator.generateRDF(city);
+            rdfmaker.generateRDF(city);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -276,7 +276,7 @@ public class CityParser {
     public void jcdecauxParser (String sURL, String cityName, String country) {
         // Connect to the URL using java's native library
         try {
-            RDFGenerator rdfGenerator = new RDFGenerator();
+            RdfMaker rdfmaker = new RdfMaker();
 
             URL url = new URL(sURL);
             URLConnection request = url.openConnection();
@@ -301,7 +301,7 @@ public class CityParser {
             while (itr2.hasNext()) {
                 Map feature = ((Map) itr2.next());
                 Map fields = (Map) feature.get("fields");
-                BikeStation bikeStation = new BikeStation();
+                Station bikeStation = new Station();
                 bikeStation.setName((String)fields.get("name"));
                 bikeStation.setId(String.valueOf(fields.get("number")));
                 bikeStation.setTotal(String.valueOf(fields.get("bike_stands")));
@@ -312,10 +312,10 @@ public class CityParser {
                 ArrayList position = (ArrayList)fields.get("position");
                 bikeStation.setLattitude(String.valueOf(position.get(0)));
                 bikeStation.setLongitude(String.valueOf(position.get(1)));
-                city.addBikeStation(bikeStation);
+                city.addStation(bikeStation);
             }
 
-//        for (BikeStation bikeStation : lyon.getBikeStations()) {
+//        for (Station bikeStation : lyon.getStations()) {
 //            System.out.println("Name : "+bikeStation.getName());
 //            System.out.println("Id : "+bikeStation.getId());
 //            System.out.println("Lattitude : "+bikeStation.getLattitude());
@@ -326,7 +326,7 @@ public class CityParser {
 //            System.out.println("Card Paiement : "+bikeStation.getCardPaiement()+"\n\n");
 //        }
 
-            rdfGenerator.generateRDF(city);
+            rdfmaker.generateRDF(city);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ParseException e) {

@@ -13,9 +13,9 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import Models.BikeStation;
-import Models.City;
-import RDFGenerator.RDFGenerator;
+import models.Station;
+import models.City;
+import rdfmaker.RdfMaker;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -26,7 +26,7 @@ public class XmlParser {
 
     public void XMLFileParser (String url, String cityName, String country) {
         try {
-            RDFGenerator rdfGenerator = new RDFGenerator();
+            RdfMaker rdfmaker = new RdfMaker();
 
             /* Getting the XML file from a url */
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -63,7 +63,7 @@ public class XmlParser {
                                 if (bikeStations.item(j).getNodeType() == Node.ELEMENT_NODE) {
                                     if (bikeStations.item(j).getNodeName().equals("si")) {
                                         /* Get bike station information and create its object */
-                                        BikeStation bikeStation = new BikeStation();
+                                        Station bikeStation = new Station();
 
                                         if (bikeStations.item(j).getAttributes().getNamedItem("na") != null) {
                                             String name = bikeStations.item(j).getAttributes().getNamedItem("na").getNodeValue();
@@ -99,7 +99,7 @@ public class XmlParser {
                                             bikeStation.setCardPaiement(cardPaiement);
                                         }
 
-                                        city.addBikeStation(bikeStation);
+                                        city.addStation(bikeStation);
                                     }
                                 }
                             }
@@ -109,19 +109,19 @@ public class XmlParser {
                 }
 
                 /* Print all bike stations */
-//                for (int i = 0; i < montpellier.getBikeStations().size(); i++) {
-//                    System.out.println("Bike station name: " + montpellier.getBikeStations().get(i).getName());
-//                    System.out.println("Id: " + montpellier.getBikeStations().get(i).getId());
-//                    System.out.println("Lattitude: " + montpellier.getBikeStations().get(i).getLattitude());
-//                    System.out.println("Longitude: " + montpellier.getBikeStations().get(i).getLongitude());
-//                    System.out.println("Available: " + montpellier.getBikeStations().get(i).getAvailable());
-//                    System.out.println("Free: " + montpellier.getBikeStations().get(i).getFree());
-//                    System.out.println("Total: " + montpellier.getBikeStations().get(i).getTotal());
-//                    System.out.println("Card paiement: " + montpellier.getBikeStations().get(i).getCardPaiement());
+//                for (int i = 0; i < montpellier.getStations().size(); i++) {
+//                    System.out.println("Bike station name: " + montpellier.getStations().get(i).getName());
+//                    System.out.println("Id: " + montpellier.getStations().get(i).getId());
+//                    System.out.println("Lattitude: " + montpellier.getStations().get(i).getLattitude());
+//                    System.out.println("Longitude: " + montpellier.getStations().get(i).getLongitude());
+//                    System.out.println("Available: " + montpellier.getStations().get(i).getAvailable());
+//                    System.out.println("Free: " + montpellier.getStations().get(i).getFree());
+//                    System.out.println("Total: " + montpellier.getStations().get(i).getTotal());
+//                    System.out.println("Card paiement: " + montpellier.getStations().get(i).getCardPaiement());
 //                    System.out.println();
 //                }
 
-                rdfGenerator.generateRDF(city);
+                rdfmaker.generateRDF(city);
             }
 
         } catch (ParserConfigurationException e) {
