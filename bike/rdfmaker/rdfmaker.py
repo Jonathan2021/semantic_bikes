@@ -86,4 +86,4 @@ class RdfMaker:
             store = sparqlstore.SPARQLUpdateStore()
             store.open((query_endpoint, update_endpoint))
 
-            store.add_graph(graph)
+            store.add_graph(g)
