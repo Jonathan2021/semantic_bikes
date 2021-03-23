@@ -1,19 +1,11 @@
 import xml.etree.ElementTree as ET
 import sys
 sys.path.append('..')
-from models.city import City
 from models.station import Station
-from rdfmaker.rdfmaker import RdfMaker
-from .helper.helper import get_url_content
 
 class XmlParser:
-        def parse(url, cityName, country):
-            root = ET.fromstring(get_url_content(url))
-            
-            city = City();
-            city.setName(cityName);
-            city.setCountry(country);
-            
+        def parse(content, city):
+            root = ET.fromstring(content)
             elements = root[0]
 
             for element in elements:
@@ -35,5 +27,3 @@ class XmlParser:
                 station.setFree(int(free) if free else free)
 
                 city.addStation(station)
-
-            RdfMaker.generateRDF(city)

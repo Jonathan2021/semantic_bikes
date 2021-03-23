@@ -1,62 +1,60 @@
 from consts import consts
 from models.city import City
 from models.station import Station
-from parsers.xmlparser import XmlParser
-from parsers.jsonparser import JsonParser
+from parsers.parser import Parser
+import argparse
 
-def parseAll():
-        XmlParser.parse("https://data.montpellier3m.fr/sites/default/files/ressources/TAM_MMM_VELOMAG.xml", "Montpellier", "France")
+def parseAll(tofuseki=False):
+    toParse = {
+            'France': {
+                'Montpellier': "https://data.montpellier3m.fr/sites/default/files/ressources/TAM_MMM_VELOMAG.xml",
 
-        # Strasbourg - France 
-        XmlParser.parse("http://velhop.strasbourg.eu/tvcstations.xml", "Strasbourg", "France")
+                'Strasbourg': "http://velhop.strasbourg.eu/tvcstations.xml",
 
-        # Lyon - France 
-        JsonParser.parse("https://download.data.grandlyon.com/wfs/rdata?SERVICE=WFS&VERSION=1.1.0&outputformat=GEOJSON&request=GetFeature&typename=jcd_jcdecaux.jcdvelov&SRSNAME=urn:ogc:def:crs:EPSG::4171", "Lyon", "France")
+                'Lyon': "https://download.data.grandlyon.com/wfs/rdata?SERVICE=WFS&VERSION=1.1.0&outputformat=GEOJSON&request=GetFeature&typename=jcd_jcdecaux.jcdvelov&SRSNAME=urn:ogc:def:crs:EPSG::4171",
 
-        # Rennes - France 
-        JsonParser.parse("https://data.rennesmetropole.fr/api/records/1.0/search/?dataset=etat-des-stations-le-velo-star-en-temps-reel", "Rennes", "France")
+                'Rennes': "https://data.rennesmetropole.fr/api/records/1.0/search/?dataset=etat-des-stations-le-velo-star-en-temps-reel",
 
-        # Avignon - France 
-        JsonParser.parse("https://data.opendatasoft.com/api/records/1.0/search/?dataset=osm-fr-stations-de-velo-en-libre-service%40babel&facet=network&facet=operator&facet=source", "Avignon", "France")
+                'Avignon': "https://data.rennesmetropole.fr/api/records/1.0/search/?dataset=etat-des-stations-le-velo-star-en-temps-reel",
 
-        # Nice - France 
-        JsonParser.parse("http://opendata.nicecotedazur.org/data/storage/f/2014-05-13T08%3A20%3A37.361Z/velobleu.geojson", "Nice", "France")
+                'Nice': "http://opendata.nicecotedazur.org/data/storage/f/2014-05-13T08%3A20%3A37.361Z/velobleu.geojson",
 
-        # Marseille - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=marseille", "Marseille", "France")
+                'Marseille': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=marseille",
 
-        # Valence - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=valence", "Valence", "France")
+                'Valence': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=valence",
 
-        # Toulouse - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=toulouse", "Toulouse", "France")
+                'Toulouse': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=toulouse",
 
-        # Nantes - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=nantes", "Nantes", "France")
+                'Nantes': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=nantes",
 
-        # Nancy - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=nancy", "Nancy", "France")
+                'Nancy': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=nancy",
 
-        # Amiens - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=amiens", "Amiens", "France")
+                'Amiens': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=amiens",
 
-        # Rouen - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=rouen", "Rouen", "France")
+                'Rouen': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=rouen",
 
-        # Besancon - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=besancon", "Besancon", "France")
+                'Besancon': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=Cergy-Pontoise",
 
-        # Creteil - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=creteil", "Creteil", "France")
+                'Creteil': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=creteil",
 
-        # Cergy-Pontoise - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=Cergy-Pontoise", "Cergy-Pontoise", "France")
+                'Cergy-Pontoise': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=Cergy-Pontoise",
 
-        # Mulhouse - France 
-        JsonParser.parse("https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=mulhouse", "Mulhouse", "France")
+                'Mulhouse': "https://public.opendatasoft.com/api/records/1.0/search/?dataset=jcdecaux_bike_data&facet=banking&facet=bonus&facet=status&facet=contract_name&refine.contract_name=mulhouse",
 
-        # Saint-Étienne - France
-        JsonParser.parse("https://saint-etienne-gbfs.klervi.net/gbfs/en/station_information.json", "Saint-Étienne", "France")
+                'Saint-Étienne': "https://saint-etienne-gbfs.klervi.net/gbfs/en/station_information.json"
+                }
+            }
+
+    for country, cities in toParse.items():
+        for city, url in cities.items():
+            Parser.parse(url, city, country, tofuseki)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--tofuseki', '-tf', action="store_true")
+    args = parser.parse_args()
+    parseAll(args.tofuseki)
 
 if __name__ == "__main__":
-    parseAll()
+    main()

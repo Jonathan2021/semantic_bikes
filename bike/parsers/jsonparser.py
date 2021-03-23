@@ -1,19 +1,12 @@
 import sys
 sys.path.append('..')
-from models.city import City
 from models.station import Station
-from rdfmaker.rdfmaker import RdfMaker
-from .helper.helper import get_url_content
 import json
 
 class JsonParser:
     @staticmethod
-    def parse(URL, cityName, country):
-        js = json.loads(get_url_content(URL))
-
-        city = City()
-        city.setName(cityName)
-        city.setCountry(country)
+    def parse(content, city):
+        js = json.loads(content)
 
         if 'features' in js.keys():
             JsonParser.parseV1(js, city)
@@ -28,8 +21,6 @@ class JsonParser:
             JsonParser.parseV5(js, city)
         else:
             JsonParser.parseV4(js, city)
-
-        RdfMaker.generateRDF(city)
 
     @staticmethod
     def parseV1(js, city):
