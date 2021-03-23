@@ -44,26 +44,24 @@ toParse = {
         }
     }
 
-def parse(city, country="France", tofuseki=False):
+def parse(city, country="France"):
     tmp = toParse.get(country)
     if not tmp:
         print(f"No such country as {country} is supported", file=sys.stderr)
     url = tmp.get(city)
     if not url:
         print(f"No such city as {city} is supported", file=sys.stderr)
-    Parser.parse(url, city, country, tofuseki)
+    return Parser.parse(url, city, country)
 
-def parseAll(tofuseki=False):
+def parseAll():
     for country, cities in toParse.items():
         for city, url in cities.items():
-            Parser.parse(url, city, country, tofuseki)
+            yield Parser.parse(url, city, country)
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--tofuseki', '-tf', action="store_true")
-    args = parser.parse_args()
-    parseAll(args.tofuseki)
+    for res in parseAll():
+        print(res)
 
 if __name__ == "__main__":
     main()

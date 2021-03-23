@@ -10,7 +10,7 @@ from rdflib.plugins.stores import sparqlstore
 
 class RdfMaker:
     @staticmethod
-    def generateRDF(city, tofuseki=False):
+    def generateRDF(city):
         
         ex = Namespace("http://www.example.com/")
         geo = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
@@ -80,15 +80,6 @@ class RdfMaker:
                     raise
         g.serialize(destination=path, format="turtle")
 
-        if tofuseki:
-            query_endpoint = consts.triplestore + '/query'
-            update_endpoint =  consts.triplestore + '/update'
-            store = sparqlstore.SPARQLUpdateStore()
-            store.open((query_endpoint, update_endpoint))
-            
-            identifier = URIRef(ex + city.getName())
-            ng = Graph(store, identifier=identifier)
-            ng.update(
-
-                    u'INSERT DATA { %s }' % g.serialize(format='turtle').decode("utf-8")
-            )
+        with open(path, 'r') as f:
+            content = f.read()
+        return content

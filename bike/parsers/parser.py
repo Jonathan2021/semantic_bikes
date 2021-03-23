@@ -8,7 +8,7 @@ from .xmlparser import XmlParser
 from .jsonparser import JsonParser
 
 class Parser:
-        def parse(url, cityName, country, tofuseki=False):
+        def parse(url, cityName, country):
             print(cityName + ' -- ' + country)
             city = City();
             city.setName(cityName);
@@ -20,4 +20,4 @@ class Parser:
             else:
                 JsonParser.parse(content, city)
             
-            RdfMaker.generateRDF(city, tofuseki)
+            return RdfMaker.generateRDF(city)
