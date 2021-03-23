@@ -1,7 +1,7 @@
 from urllib.parse import quote
 
 class City:
-    def __init__(self, doquote=True):
+    def __init__(self):
         self._name = None
         self._country = None
         self._bikeStations = []
@@ -9,13 +9,13 @@ class City:
     def addStation(self, bikeStation):
         self._bikeStations.append(bikeStation)
 
-    def getName(self, doquote=True):
+    def getName(self, doquote=False):
         return quote(self._name.encode("utf-8")) if isinstance(self._name, str) and doquote else self._name
 
     def setName(self, name):
         self._name = name
 
-    def getCountry(self, doquote=True):
+    def getCountry(self, doquote=False):
         return quote(self._country.encode("utf-8")) if isinstance(self._country, str) and doquote else self._country
     
     def setCountry(self, country):

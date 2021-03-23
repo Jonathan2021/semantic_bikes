@@ -1,15 +1,14 @@
-from urllib.request import urlopen
 import xml.etree.ElementTree as ET
 import sys
 sys.path.append('..')
 from models.city import City
 from models.station import Station
 from rdfmaker.rdfmaker import RdfMaker
+from .helper.helper import get_url_content
 
 class XmlParser:
         def parse(url, cityName, country):
-            text = urlopen(url).read()
-            root = ET.fromstring(text)
+            root = ET.fromstring(get_url_content(url))
             
             city = City();
             city.setName(cityName);

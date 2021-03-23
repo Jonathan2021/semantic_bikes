@@ -3,32 +3,31 @@ sys.path.append('..')
 from models.city import City
 from models.station import Station
 from rdfmaker.rdfmaker import RdfMaker
-from urllib.request import urlopen
+from .helper.helper import get_url_content
 import json
 
 class JsonParser:
     @staticmethod
     def parse(URL, cityName, country):
-        resp = urlopen(URL)
-        js = json.loads(res.read())
+        js = json.loads(get_url_content(URL))
 
         city = City()
         city.setName(cityName)
         city.setCountry(country)
 
         if 'features' in js.keys():
-            parseV1(js, city)
+            JsonParser.parseV1(js, city)
         elif 'facet_groups' in js.keys():
             if 'decaux' in js['parameters']['dataset']:
-                parseDecaux(js, city)
+                JsonParser.parseDecaux(js, city)
             else:
-                parseV3(js, city)
+                JsonParser.parseV3(js, city)
         elif 'records' in js.keys():
-            parseV2(js, city)
+            JsonParser.parseV2(js, city)
         elif 'data' in js.keys():
-            parseV5(js, city)
+            JsonParser.parseV5(js, city)
         else:
-            parseV4(js, city)
+            JsonParser.parseV4(js, city)
 
         RdfMaker.generateRDF(city)
 
@@ -36,7 +35,7 @@ class JsonParser:
     def parseV1(js, city):
 
         for feature in js['features']:
-            props = feature['properties']
+            properties = feature['properties']
             station = Station()
             station.setName(properties.get('name'))
             st_id = properties.get('number')
@@ -61,7 +60,7 @@ class JsonParser:
     def parseV2(js, city):
 
         for record in js['records']:
-            props = records['fields']
+            properties = record['fields']
             station = Station()
 
             station.setName(properties.get('nom'))
@@ -88,7 +87,7 @@ class JsonParser:
             station = Station()
 
             station.setName(properties.get('name'))
-            station.setId(properties.name('recordid'))
+            station.setId(properties.get('recordid'))
             coords = properties.get('geo_point_2d')
             if coords:
                 station.setLattitude(float(coords[1]))
@@ -132,7 +131,8 @@ class JsonParser:
     def parseDecaux(js, city):
 
         for record in js['records']:
-            properties = record['properties']
+            properties = record['fields']
+            station = Station()
 
             station.setName(properties.get('name'))
             st_id = properties.get('number')

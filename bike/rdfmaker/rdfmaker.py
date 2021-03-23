@@ -1,4 +1,6 @@
 import sys
+import os
+import errno
 sys.path.append('..')
 from consts import consts
 from rdflib.namespace import RDF, RDFS, XSD
@@ -22,7 +24,7 @@ class RdfMaker:
         country_prop = dbo.country
         label_prop = RDFS.label
         bikestation_prop = ex.bikeStation
-        bikestation_uris = [URIRef(ex + city.getName() + str(i)) for i, city in enumerate(city.getStations())]
+        bikestation_uris = [URIRef(ex + city.getName() + str(i)) for i in range(len(city.getStations()))]
 
         bicycle_sharing_entity = URIRef(dbr + "Bicycle-sharing_system")
         
@@ -42,7 +44,6 @@ class RdfMaker:
         g.namespace_manager.bind("dbr", dbr)
 
         for station_uri, station in zip(bikestation_uris, city.getStations()):
-            print(type(station_uri))
             g.add((city_ressource, bikestation_prop, station_uri))
             g.add((station_uri, type_prop, bicycle_sharing_entity))
             g.add((station_uri, city_prop, city_ressource))
@@ -70,7 +71,13 @@ class RdfMaker:
                 g.add((station_uri, cardPaiement_prop, Literal(False)))
             
         path = consts.turtle_dir + city.getName() + ".ttl"
-        #open(path, "w").close()
+
+        if not os.path.exists(os.path.dirname(path)):
+            try:
+                os.makedirs(os.path.dirname(path))
+            except OSError as exc: # Guard against race condition
+                if exc.errno != errno.EEXIST:
+                    raise
         g.serialize(destination=path, format="turtle")
 
         if tofuseki:
