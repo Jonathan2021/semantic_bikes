@@ -1,17 +1,17 @@
 import sys
 sys.path.append('..')
 from consts import consts
-from rdflib.namespace import RDF, RDFS, XSD,
+from rdflib.namespace import RDF, RDFS, XSD
 from rdflib import Graph, URIRef, Namespace, Literal
 from rdflib.plugins.stores import sparqlstore
 
 
 class RdfMaker:
     @staticmethod
-    def generateRDF(city):
+    def generateRDF(city, tofuseki=False):
         
         ex = Namespace("http://www.example.com/")
-        geo = URIRef("http://www.w3.org/2003/01/geo/wgs84_pos#")
+        geo = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
         dbo = Namespace("http://dbpedia.org/ontology/")
         dbr = Namespace("http://dbpedia.org/resource/")
 
@@ -29,7 +29,7 @@ class RdfMaker:
         available_prop = ex.available
         free_prop = ex.free
         total_prop = ex.total
-        cardPaiment_Prop = ex.cardPaiement
+        cardPaiement_prop = ex.cardPaiement
         lat_prop = geo.lat
         long_prop = geo.long
 
@@ -42,6 +42,7 @@ class RdfMaker:
         g.namespace_manager.bind("dbr", dbr)
 
         for station_uri, station in zip(bikestation_uris, city.getStations()):
+            print(type(station_uri))
             g.add((city_ressource, bikestation_prop, station_uri))
             g.add((station_uri, type_prop, bicycle_sharing_entity))
             g.add((station_uri, city_prop, city_ressource))
@@ -66,14 +67,16 @@ class RdfMaker:
             if station.getCardPaiement() is not None:
                 g.add((station_uri, cardPaiement_prop, Literal(station.getCardPaiement())))
             else:
-                g.add((station_uri, cardPaiement_prop, Litteral(False)))
+                g.add((station_uri, cardPaiement_prop, Literal(False)))
             
-        path = "turtle-files/" + city.getName() + ".ttl"
+        path = consts.turtle_dir + city.getName() + ".ttl"
+        #open(path, "w").close()
         g.serialize(destination=path, format="turtle")
 
-        query_endpoint = 'http://localhost:3030/' + consts.triplestore + '/query'
-        update_endpoint = 'http://localhost:3030/' + consts.triplestore + '/update'
-        store = sparqlstore.SPARQLUpdateStore()
-        store.open((query_endpoint, update_endpoint))
+        if tofuseki:
+            query_endpoint = 'http://localhost:3030/' + consts.triplestore + '/query'
+            update_endpoint = 'http://localhost:3030/' + consts.triplestore + '/update'
+            store = sparqlstore.SPARQLUpdateStore()
+            store.open((query_endpoint, update_endpoint))
 
-        store.add_graph(graph)
+            store.add_graph(graph)

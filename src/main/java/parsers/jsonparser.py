@@ -2,13 +2,13 @@ import sys
 sys.path.append('..')
 from models.city import City
 from models.station import Station
-from rdfmaker.rdfmaker import RdfMaker;
+from rdfmaker.rdfmaker import RdfMaker
 from urllib.request import urlopen
-import jon
+import json
 
-class CityParser:
+class JsonParser:
     @staticmethod
-    def jsonParser(URL, cityName, country):
+    def parse(URL, cityName, country):
         resp = urlopen(URL)
         js = json.loads(res.read())
 
@@ -17,21 +17,23 @@ class CityParser:
         city.setCountry(country)
 
         if 'features' in js.keys():
-            jsonParserV1(js, city)
+            parseV1(js, city)
         elif 'facet_groups' in js.keys():
             if 'decaux' in js['parameters']['dataset']:
-                jsonParserDecaux(js, city)
+                parseDecaux(js, city)
             else:
-                jsonParserV3(js, city)
+                parseV3(js, city)
         elif 'records' in js.keys():
-            jsonParserV2(js, city)
+            parseV2(js, city)
+        elif 'data' in js.keys():
+            parseV5(js, city)
         else:
-            jsonParserV4(js, city)
+            parseV4(js, city)
 
-        RdfMaker.generateRDF(city);
+        RdfMaker.generateRDF(city)
 
     @staticmethod
-    def jsonParserV1(js, city):
+    def parseV1(js, city):
 
         for feature in js['features']:
             props = feature['properties']
@@ -55,8 +57,8 @@ class CityParser:
 
             city.addStation(station);
 
-
-    def jsonParserV2(js, city):
+    @staticmethod
+    def parseV2(js, city):
 
         for record in js['records']:
             props = records['fields']
@@ -78,7 +80,8 @@ class CityParser:
 
             city.addStation(station);
 
-    def jsonParserV3 (js, city):
+    @staticmethod
+    def parseV3 (js, city):
 
         for record in js['records']:
             properties = record['fields']
@@ -95,7 +98,7 @@ class CityParser:
             
             city.addStation(station);
 
-    def jsonParserV4(js, city):
+    def parseV4(js, city):
         for feature in js['features']:
             properties = features['properties']
             station = Station()
@@ -126,7 +129,7 @@ class CityParser:
             city.addStation(station);
 
 
-    def jsonParserDecaux(js, city):
+    def parseDecaux(js, city):
 
         for record in js['records']:
             properties = record['properties']
@@ -149,5 +152,21 @@ class CityParser:
             card = properties.get('banking')
             station.setCardPaiement(card != "False" if card else card)
 
+
+            city.addStation(station);
+
+    def parseV5(js, city):
+        stations = js['data']['stations']
+        for properties in stations:
+            station = Station()
+            station.setName(properties.get('name'))
+            st_id = properties.get('station_id')
+            station.setId(int(st_id) if st_id else st_id)
+            lat = properties.get('lat')
+            station.setLattitude(float(lat) if lat else lat)
+            lon = properties.get('lon')
+            station.setLongitude(float(lon) if lon else lon)
+            total = properties.get('capacity')
+            station.setTotal(int(total) if total else total)
 
             city.addStation(station);
