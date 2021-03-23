@@ -17,6 +17,7 @@ class RdfMaker:
         dbo = Namespace("http://dbpedia.org/ontology/")
         dbr = Namespace("http://dbpedia.org/resource/")
 
+
         g = Graph()
 
         city_prop = dbo.city
@@ -44,7 +45,6 @@ class RdfMaker:
         g.namespace_manager.bind("dbr", dbr)
 
         for station_uri, station in zip(bikestation_uris, city.getStations()):
-            g.add((city_ressource, bikestation_prop, station_uri))
             g.add((station_uri, type_prop, bicycle_sharing_entity))
             g.add((station_uri, city_prop, city_ressource))
             if station.getName() is not None:
@@ -70,7 +70,7 @@ class RdfMaker:
             else:
                 g.add((station_uri, cardPaiement_prop, Literal(False)))
             
-        path = consts.turtle_dir + city.getName() + ".ttl"
+        path = consts.turtle_dir + city.getName(doquote=False) + ".ttl"
 
         if not os.path.exists(os.path.dirname(path)):
             try:
@@ -81,9 +81,14 @@ class RdfMaker:
         g.serialize(destination=path, format="turtle")
 
         if tofuseki:
-            query_endpoint = 'http://localhost:3030/' + consts.triplestore + '/query'
-            update_endpoint = 'http://localhost:3030/' + consts.triplestore + '/update'
+            query_endpoint = consts.triplestore + '/query'
+            update_endpoint =  consts.triplestore + '/update'
             store = sparqlstore.SPARQLUpdateStore()
             store.open((query_endpoint, update_endpoint))
+            
+            identifier = URIRef(ex + city.getName())
+            ng = Graph(store, identifier=identifier)
+            ng.update(
 
-            store.add_graph(g)
+                    u'INSERT DATA { %s }' % g.serialize(format='turtle').decode("utf-8")
+            )

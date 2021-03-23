@@ -8,7 +8,7 @@ class JsonParser:
     def parse(content, city):
         js = json.loads(content)
 
-        if 'features' in js.keys():
+        if 'name' in js.keys():
             JsonParser.parseV1(js, city)
         elif 'facet_groups' in js.keys():
             if 'decaux' in js['parameters']['dataset']:
@@ -33,7 +33,7 @@ class JsonParser:
             station.setId(int(st_id) if st_id else st_id)
             lat = properties.get('lat')
             station.setLattitude(float(lat) if lat else lat)
-            lon = properties.get('lgn')
+            lon = properties.get('lng')
             station.setLongitude(float(lon) if lon else lon)
             total = properties.get('bike_stands')
             station.setTotal(int(total) if total else total)
@@ -90,20 +90,20 @@ class JsonParser:
 
     def parseV4(js, city):
         for feature in js['features']:
-            properties = features['properties']
+            properties = feature['properties']
             station = Station()
 
             voie = properties.get('NOM_VOIE')
             voie = "" if not voie else voie
             compl = properties.get("COMPL_LOC")
-            compl = "" if not compl else comple
+            compl = "" if not compl else compl
             name = voie + compl
             station.setName(name if name != "" else None)
 
             st_id = feature.get('id')
             station.setId(int(st_id) if st_id else st_id)
 
-            coords = properties.get('coordonnees')
+            coords = feature.get('geometry')
             if coords and coords.get('coordinates'):
                 coords = coords.get('coordinates')
                 station.setLattitude(float(coords[1]))

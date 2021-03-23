@@ -9,6 +9,7 @@ from .jsonparser import JsonParser
 
 class Parser:
         def parse(url, cityName, country, tofuseki=False):
+            print(cityName + ' -- ' + country)
             city = City();
             city.setName(cityName);
             city.setCountry(country);
