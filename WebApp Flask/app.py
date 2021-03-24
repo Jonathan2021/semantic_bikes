@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+import sys
+sys.path.append('../bike')
+sys.path.append('..')
+from bike.main import parse
 from flask import Flask,render_template,request
 import pickle
 import numpy as np
@@ -56,16 +60,31 @@ def deleteTripleStore(city):
     }"""
     query.run_sparql(sparql)
 
+def insertNewTriplestore(data):
+    query=FusekiUpdate('http://127.0.0.1:3030','bikes')
+    sparql="""
+    PREFIX dbo: <http://dbpedia.org/ontology/>
+    PREFIX dbr: <http://dbpedia.org/resource/> 
+    PREFIX ex: <http://www.example.com/> 
+    PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> 
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+    INSERT DATA  { """+data+"""}
+    """
+    query.run_sparql(sparql)
 
-def updateTriplestore(city):
+def updateTriplestore(city,data):
     deleteTripleStore(city)
-
+    insertNewTriplestore(data)
 
 
 
 @app.route("/")
 def home():
-    return render_template("home.html", title='Find Your Path API')
+    a=parse("Cergy-Pontoise").split('\n',7)[7]
+    print(a)
+    print(parse("Strasbourg").split('\n',7)[7])
+    return render_template("home.html", title='Find Your Path API',a=a)
 
 @app.route("/route")
 def route():
