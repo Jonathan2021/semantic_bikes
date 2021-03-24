@@ -61,8 +61,8 @@ def parseAll():
 
 
 def main():
-    for res in parseAll():
-        print(res)
+    parseAll()
+    print(parse("Cergy-Pontoise"))
 
 if __name__ == "__main__":
     main()
