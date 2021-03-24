@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <style>
+    .image-2 {
+    background-size: cover;
+    width:100%;
+    height: 460px;
+    }
+      #tooltip {
+        background: #D7B5C5;
+        color: white;
+        font-weight: bold;
+        padding: 4px 8px;
+        font-size: 13px;
+        border-radius: 4px;
+        display: none;
+      }
+
+      #tooltip[data-show] {
+        display: block;
+      }
+
+      #arrow,
+      #arrow::before {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        z-index: -1;
+      }
+
+      #arrow::before {
+        content: '';
+        transform: rotate(45deg);
+        background: #333;
+      }
+
+      #tooltip[data-popper-placement^='top'] > #arrow {
+        bottom: -4px;
+      }
+
+      #tooltip[data-popper-placement^='bottom'] > #arrow {
+        top: -4px;
+      }
+
+      #tooltip[data-popper-placement^='left'] > #arrow {
+        right: -4px;
+      }
+
+      #tooltip[data-popper-placement^='right'] > #arrow {
+        left: -4px;
+      }
+    </style>
+  <div style="overflow-x: hidden;">
+    <h1  style="font-size: 36px;position:relative; left:20px;
+    color: #660033;">{{ title }}</h1><br>
+    <div class="image-2" style="background-image:url(static/images/staticmap.png);">
+    <br>
+    <div class="verticalLine shadow-lg p-3 mb-5 bg-body rounded" style="position: absolute;left: 300px;right: 300px;">
+      <form enctype="multipart/form-data" action="/postoffices/found"method="POST">
+      <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input type="text" class="form-control" name=address  placeholder="10 rue de la liberté">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">City</label>
+        <input type="text" class="form-control" name=city  placeholder="Paris">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">ZipCode</label>
+        <input type="number" class="form-control" name=zip  placeholder="75000">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Max Distance</label>
+        <select class="form-select" name=distance aria-label="Default select example">
+          <option value="5" selected="selected">3 km</option>
+          <option value="5" >5 km</option>
+          <option value="5" >10 km</option>
+          <option value="10" >20km</option>
+          <option value="1000" >No Limit</option>
+      </select>
+      </div>
+      <button type="submit" aria-describedby="tooltip" id="button" class="btn btn-primary btn-block btn-large" style="background: #660033;border-color: #660033">Find Post Offices</button>
+        <div id="tooltip" role="tooltip" data-popper-placement="bottom">
+        Please be sure you have correctly filled your address
+          <div id="arrow" data-popper-arrow></div>
+        </div>
+    </form>
+    </div>
+  </div></div>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script>
+      const button = document.querySelector('#button');
+      const tooltip = document.querySelector('#tooltip');
+
+      let popperInstance = null;
+
+      function create() {
+        popperInstance = Popper.createPopper(button, tooltip, {
+          modifiers: [
+            {
+              name: 'offset',
+              options: {
+                offset: [0, 8],
+              },
+            },
+          ],
+        });
+      }
+
+      function destroy() {
+        if (popperInstance) {
+          popperInstance.destroy();
+          popperInstance = null;
+        }
+      }
+
+      function show() {
+        tooltip.setAttribute('data-show', '');
+        create();
+      }
+
+      function hide() {
+        tooltip.removeAttribute('data-show');
+        destroy();
+      }
+
+      const showEvents = ['mouseenter', 'focus'];
+      const hideEvents = ['mouseleave', 'blur'];
+
+      showEvents.forEach(event => {
+        button.addEventListener(event, show);
+      });
+
+      hideEvents.forEach(event => {
+        button.addEventListener(event, hide);
+      });
+    </script>
+{% endblock %}

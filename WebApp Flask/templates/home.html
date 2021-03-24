@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<style>
+  * {
+   box-sizing: border-box;
+}
+.container-2 {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-2:hover .image {
+  opacity: 0.3;
+}
+
+.container-2:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #660033;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+
+    <h1  style="font-size: 36px;position:relative; left:20px;
+    color: #660033;">{{ title }}</h1><br>
+
+<div class="row">
+  <div class="column">
+    <div class="container-2 "><a href="/route">
+    <img src="static/images/velib.png" alt="Avatar" class="image shadow-lg p-3 mb-5 bg-body rounded" style="width:100%">
+      <div class=" middle">
+        <div class="text">Find Route</div>
+       </div></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container-2 "><a href="/postoffices">
+    <img src="static/images/post_office2.jpg" alt="Avatar" class="image shadow-lg p-3 mb-5 bg-body rounded" style="width:100%">
+      <div class=" middle">
+        <div class="text">Find Post Office</div>
+       </div></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container-2 "><a href="/libraries">
+    <img src="static/images/library.jpg" alt="Avatar" class="image shadow-lg p-3 mb-5 bg-body rounded" style="width:100%">
+      <div class=" middle">
+        <div class="text">Find Library</div>
+       </div></a>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

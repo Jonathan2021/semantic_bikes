@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <style>
+    .image-2 {
+    background-size: cover;
+    width:100%;
+    height: 415px;
+    }
+      #tooltip {
+        background: #D7B5C5;
+        color: white;
+        font-weight: bold;
+        padding: 4px 8px;
+        font-size: 13px;
+        border-radius: 4px;
+        display: none;
+      }
+
+      #tooltip[data-show] {
+        display: block;
+      }
+
+      #arrow,
+      #arrow::before {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        z-index: -1;
+      }
+
+      #arrow::before {
+        content: '';
+        transform: rotate(45deg);
+        background: #333;
+      }
+
+      #tooltip[data-popper-placement^='top'] > #arrow {
+        bottom: -4px;
+      }
+
+      #tooltip[data-popper-placement^='bottom'] > #arrow {
+        top: -4px;
+      }
+
+      #tooltip[data-popper-placement^='left'] > #arrow {
+        right: -4px;
+      }
+
+      #tooltip[data-popper-placement^='right'] > #arrow {
+        left: -4px;
+      }
+    </style>
+  <div style="overflow-x: hidden;">
+    <h1  style="font-size: 36px;position:relative; left:20px;
+    color: #660033;">{{ title }}</h1><br>
+    <div class="image-2" style="background-image:url(static/images/staticmap.png);">
+    <br>
+    <div class="verticalLine shadow-lg p-3 mb-5 bg-body rounded" style="position: absolute;left: 300px;right: 300px;">
+      <form enctype="multipart/form-data" action="/route/itinerary"method="POST">
+      <div class="mb-3">
+        <label class="form-label">From</label>
+        <input type="text" class="form-control" name=from  placeholder="1 avenue de colmar"><br>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">To</label>
+        <input type="text" class="form-control" name=to  placeholder="2 rue saint florent"><br>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">City</label>
+        <select class="form-select" name=cityto aria-label="Default select example">
+          <option value="Amien" >Amien</option>
+          <option value="Avignon" >Avignon</option>
+          <option value="Besancon" >Besancon</option>
+          <option value="Cergy-Pontoise" >Cergy-Pontoise</option>
+          <option value="Créteil" >Créteil</option>
+          <option value="Lyon" >Lyon</option>
+          <option value="Marseille" >Marseille</option>
+          <option value="Mulhouse" >Mulhouse</option>
+          <option value="Montpellier" >Montpellier</option>
+          <option value="Nancy" >Nancy</option>
+          <option value="Nantes" >Nantes</option>
+          <option value="Nice" >Nice</option>
+          <option value="Renne" >Renne</option>
+          <option value="Rouen" >Rouen</option>
+          <option value="Strasbourg" selected="selected" >Strasbourg</option>
+          <option value="Toulouse" >Toulouse</option>
+          <option value="Valence" >Valence</option>
+      </select>
+      </div>
+      <button type="submit" aria-describedby="tooltip" id="button" class="btn btn-primary btn-block btn-large" style="background: #660033;border-color: #660033">Find Route</button>
+        <div id="tooltip" role="tooltip" data-popper-placement="bottom">
+        Please be sure you have correctly filled the addresses
+          <div id="arrow" data-popper-arrow></div>
+        </div>
+        {% if nfound %}
+        <div>Your address have not been found, please verify it</div>
+        {% endif %}
+    </form>
+    </div>
+  </div>
+</div>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script>
+      const button = document.querySelector('#button');
+      const tooltip = document.querySelector('#tooltip');
+
+      let popperInstance = null;
+
+      function create() {
+        popperInstance = Popper.createPopper(button, tooltip, {
+          modifiers: [
+            {
+              name: 'offset',
+              options: {
+                offset: [0, 8],
+              },
+            },
+          ],
+        });
+      }
+
+      function destroy() {
+        if (popperInstance) {
+          popperInstance.destroy();
+          popperInstance = null;
+        }
+      }
+
+      function show() {
+        tooltip.setAttribute('data-show', '');
+        create();
+      }
+
+      function hide() {
+        tooltip.removeAttribute('data-show');
+        destroy();
+      }
+
+      const showEvents = ['mouseenter', 'focus'];
+      const hideEvents = ['mouseleave', 'blur'];
+
+      showEvents.forEach(event => {
+        button.addEventListener(event, show);
+      });
+
+      hideEvents.forEach(event => {
+        button.addEventListener(event, hide);
+      });
+    </script>
+{% endblock %}
