@@ -53,7 +53,7 @@ def deleteTripleStore(city):
     PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> 
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-    DELETE DATA  { ?a ?p ?o}
+    DELETE  { ?a ?p ?o}
     WHERE {
         ?a dbo:city dbr:"""+city+""" .
         ?a ?p ?o .
@@ -74,17 +74,17 @@ def insertNewTriplestore(data):
     query.run_sparql(sparql)
 
 def updateTriplestore(city,data):
+    print('Inside udpdate')
     deleteTripleStore(city)
+    print('Delete Done')
     insertNewTriplestore(data)
+    print('Insert Done')
 
 
 
 @app.route("/")
 def home():
-    a=parse("Cergy-Pontoise").split('\n',7)[7]
-    print(a)
-    print(parse("Strasbourg").split('\n',7)[7])
-    return render_template("home.html", title='Find Your Path API',a=a)
+    return render_template("home.html", title='Find Your Path API')
 
 @app.route("/route")
 def route():
@@ -176,6 +176,7 @@ def itinerary():
     dataTo=getGeoloc(addressTo.replace(' ','%20'))
     if dataFrom is None or dataTo is None:
         return render_template("not_found.html",title='Oops !')
+    updateTriplestore(city,parse(city).split('\n',7)[7])
     print(dataFrom)
     print(dataTo)
     fuseki_query=FusekiQuery('http://127.0.0.1:3030','bikes')
