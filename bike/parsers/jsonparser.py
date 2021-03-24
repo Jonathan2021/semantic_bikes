@@ -97,8 +97,8 @@ class JsonParser:
             voie = "" if not voie else voie
             compl = properties.get("COMPL_LOC")
             compl = "" if not compl else compl
-            name = voie + compl
-            station.setName(name if name != "" else None)
+            name = voie + " " + compl
+            station.setName(name if name != " " else None)
 
             st_id = feature.get('id')
             station.setId(int(st_id) if st_id else st_id)

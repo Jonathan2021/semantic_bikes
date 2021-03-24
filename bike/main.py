@@ -1,3 +1,4 @@
+import sys
 from consts import consts
 from models.city import City
 from models.station import Station
@@ -60,8 +61,8 @@ def parseAll():
 
 
 def main():
-    for res in parseAll():
-        print(res)
+    parseAll()
+    print(parse("Cergy-Pontoise"))
 
 if __name__ == "__main__":
     main()
