@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 rdflib = "*"
 pyfuseki = "*"
+flask = "*"
+numpy = "*"
 
 [dev-packages]
 

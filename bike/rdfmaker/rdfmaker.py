@@ -78,8 +78,9 @@ class RdfMaker:
             except OSError as exc: # Guard against race condition
                 if exc.errno != errno.EEXIST:
                     raise
-        g.serialize(destination=path, format="turtle")
 
-        with open(path, 'r') as f:
-            content = f.read()
+        content = g.serialize(format="turtle", enconding="utf-8").decode(encoding="utf-8")
+
+        with open(path, 'w') as f:
+            f.write(content)
         return content
