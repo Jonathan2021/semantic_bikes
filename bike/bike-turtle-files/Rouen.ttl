@@ -1,0 +1,107 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ex: <http://www.example.com/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Rouen0 a dbr:Bicycle-sharing_system ;
+    rdfs:label "08- SAINT MARC" ;
+    dbo:city dbr:Rouen ;
+    ex:available 10 ;
+    ex:cardPaiement true ;
+    ex:free 10 ;
+    ex:total 20 ;
+    geo:lat 4.943811e+01 ;
+    geo:long 1.100852e+00 .
+
+ex:Rouen1 a dbr:Bicycle-sharing_system ;
+    rdfs:label "15-GARE" ;
+    dbo:city dbr:Rouen ;
+    ex:available 19 ;
+    ex:cardPaiement true ;
+    ex:free 6 ;
+    ex:total 25 ;
+    geo:lat 4.944829e+01 ;
+    geo:long 1.0942e+00 .
+
+ex:Rouen2 a dbr:Bicycle-sharing_system ;
+    rdfs:label "11- CLEMENCEAU JOFFRE" ;
+    dbo:city dbr:Rouen ;
+    ex:available 5 ;
+    ex:cardPaiement true ;
+    ex:free 15 ;
+    ex:total 20 ;
+    geo:lat 4.943465e+01 ;
+    geo:long 1.087959e+00 .
+
+ex:Rouen3 a dbr:Bicycle-sharing_system ;
+    rdfs:label "12- PLACE DES COTONNIERS" ;
+    dbo:city dbr:Rouen ;
+    ex:available 13 ;
+    ex:cardPaiement true ;
+    ex:free 7 ;
+    ex:total 20 ;
+    geo:lat 4.943088e+01 ;
+    geo:long 1.081412e+00 .
+
+ex:Rouen4 a dbr:Bicycle-sharing_system ;
+    rdfs:label "23 - HANGAR 106" ;
+    dbo:city dbr:Rouen ;
+    ex:available 9 ;
+    ex:cardPaiement true ;
+    ex:free 11 ;
+    ex:total 20 ;
+    geo:lat 4.944031e+01 ;
+    geo:long 1.075491e+00 .
+
+ex:Rouen5 a dbr:Bicycle-sharing_system ;
+    rdfs:label "19 - JARDIN DES PLANTES" ;
+    dbo:city dbr:Rouen ;
+    ex:available 6 ;
+    ex:cardPaiement true ;
+    ex:free 9 ;
+    ex:total 15 ;
+    geo:lat 4.942175e+01 ;
+    geo:long 1.079708e+00 .
+
+ex:Rouen6 a dbr:Bicycle-sharing_system ;
+    rdfs:label "05- HOTEL DE VILLE" ;
+    dbo:city dbr:Rouen ;
+    ex:available 8 ;
+    ex:cardPaiement true ;
+    ex:free 12 ;
+    ex:total 20 ;
+    geo:lat 4.944251e+01 ;
+    geo:long 1.098266e+00 .
+
+ex:Rouen7 a dbr:Bicycle-sharing_system ;
+    rdfs:label "26 - SAINT-EXUPERY" ;
+    dbo:city dbr:Rouen ;
+    ex:available 4 ;
+    ex:cardPaiement true ;
+    ex:free 16 ;
+    ex:total 20 ;
+    geo:lat 4.943952e+01 ;
+    geo:long 1.116237e+00 .
+
+ex:Rouen8 a dbr:Bicycle-sharing_system ;
+    rdfs:label "24 - HANGAR 108" ;
+    dbo:city dbr:Rouen ;
+    ex:available 13 ;
+    ex:cardPaiement true ;
+    ex:free 27 ;
+    ex:total 40 ;
+    geo:lat 4.944129e+01 ;
+    geo:long 1.07176e+00 .
+
+ex:Rouen9 a dbr:Bicycle-sharing_system ;
+    rdfs:label "07- CHU - BOULEVARD GAMBETTA" ;
+    dbo:city dbr:Rouen ;
+    ex:available 11 ;
+    ex:cardPaiement true ;
+    ex:free 9 ;
+    ex:total 20 ;
+    geo:lat 4.943885e+01 ;
+    geo:long 1.107488e+00 .
+

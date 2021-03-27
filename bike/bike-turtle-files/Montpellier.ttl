@@ -1,0 +1,577 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ex: <http://www.example.com/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Montpellier0 a dbr:Bicycle-sharing_system ;
+    rdfs:label "001 Rue Jules Ferry - Gare Saint-Roch" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 12 ;
+    geo:lat 4.360537e+01 ;
+    geo:long 3.881346e+00 .
+
+ex:Montpellier1 a dbr:Bicycle-sharing_system ;
+    rdfs:label "002 Comédie" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 24 ;
+    geo:lat 4.360815e+01 ;
+    geo:long 3.878778e+00 .
+
+ex:Montpellier10 a dbr:Bicycle-sharing_system ;
+    rdfs:label "011 Plan Cabanes" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 12 ;
+    geo:lat 4.360849e+01 ;
+    geo:long 3.868389e+00 .
+
+ex:Montpellier11 a dbr:Bicycle-sharing_system ;
+    rdfs:label "012 Boutonnet" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 12 ;
+    geo:lat 4.362263e+01 ;
+    geo:long 3.868375e+00 .
+
+ex:Montpellier12 a dbr:Bicycle-sharing_system ;
+    rdfs:label "013 Emile Combes" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 8 ;
+    geo:lat 4.361674e+01 ;
+    geo:long 3.87998e+00 .
+
+ex:Montpellier13 a dbr:Bicycle-sharing_system ;
+    rdfs:label "014 Beaux-Arts" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 8 ;
+    geo:lat 4.36167e+01 ;
+    geo:long 3.884981e+00 .
+
+ex:Montpellier14 a dbr:Bicycle-sharing_system ;
+    rdfs:label "015 Les Aubes" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 8 ;
+    geo:lat 4.361869e+01 ;
+    geo:long 3.893844e+00 .
+
+ex:Montpellier15 a dbr:Bicycle-sharing_system ;
+    rdfs:label "016 Antigone centre" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 16 ;
+    geo:lat 4.360794e+01 ;
+    geo:long 3.890634e+00 .
+
+ex:Montpellier16 a dbr:Bicycle-sharing_system ;
+    rdfs:label "017 Médiathèque Emile Zola" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 16 ;
+    geo:lat 4.360822e+01 ;
+    geo:long 3.89314e+00 .
+
+ex:Montpellier17 a dbr:Bicycle-sharing_system ;
+    rdfs:label "018 Nombre d'Or" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 16 ;
+    geo:lat 4.360786e+01 ;
+    geo:long 3.886644e+00 .
+
+ex:Montpellier18 a dbr:Bicycle-sharing_system ;
+    rdfs:label "019 Louis Blanc" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 16 ;
+    geo:lat 4.361464e+01 ;
+    geo:long 3.877648e+00 .
+
+ex:Montpellier19 a dbr:Bicycle-sharing_system ;
+    rdfs:label "020 Gambetta" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 8 ;
+    geo:lat 4.360711e+01 ;
+    geo:long 3.870693e+00 .
+
+ex:Montpellier2 a dbr:Bicycle-sharing_system ;
+    rdfs:label "003 Esplanade" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 25 ;
+    ex:total 32 ;
+    geo:lat 4.360948e+01 ;
+    geo:long 3.881293e+00 .
+
+ex:Montpellier20 a dbr:Bicycle-sharing_system ;
+    rdfs:label "021 Port Marianne" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 16 ;
+    geo:lat 4.360032e+01 ;
+    geo:long 3.89851e+00 .
+
+ex:Montpellier21 a dbr:Bicycle-sharing_system ;
+    rdfs:label "022 Clemenceau" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 12 ;
+    geo:lat 4.360354e+01 ;
+    geo:long 3.872394e+00 .
+
+ex:Montpellier22 a dbr:Bicycle-sharing_system ;
+    rdfs:label "023 Les Arceaux" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 16 ;
+    geo:lat 4.361199e+01 ;
+    geo:long 3.867157e+00 .
+
+ex:Montpellier23 a dbr:Bicycle-sharing_system ;
+    rdfs:label "024 Cité Mion" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 8 ;
+    geo:lat 4.360114e+01 ;
+    geo:long 3.884373e+00 .
+
+ex:Montpellier24 a dbr:Bicycle-sharing_system ;
+    rdfs:label "025 Nouveau Saint-Roch" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 8 ;
+    geo:lat 4.359982e+01 ;
+    geo:long 3.875757e+00 .
+
+ex:Montpellier25 a dbr:Bicycle-sharing_system ;
+    rdfs:label "026 Renouvier" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 8 ;
+    geo:lat 4.360355e+01 ;
+    geo:long 3.867884e+00 .
+
+ex:Montpellier26 a dbr:Bicycle-sharing_system ;
+    rdfs:label "027 Odysseum" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 8 ;
+    geo:lat 4.360373e+01 ;
+    geo:long 3.918979e+00 .
+
+ex:Montpellier27 a dbr:Bicycle-sharing_system ;
+    rdfs:label "028 Saint-Denis" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 8 ;
+    geo:lat 4.360502e+01 ;
+    geo:long 3.875065e+00 .
+
+ex:Montpellier28 a dbr:Bicycle-sharing_system ;
+    rdfs:label "029 Richter" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 16 ;
+    geo:lat 4.360342e+01 ;
+    geo:long 3.899263e+00 .
+
+ex:Montpellier29 a dbr:Bicycle-sharing_system ;
+    rdfs:label "030 Charles Flahault" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 8 ;
+    geo:lat 4.361876e+01 ;
+    geo:long 3.865971e+00 .
+
+ex:Montpellier3 a dbr:Bicycle-sharing_system ;
+    rdfs:label "004 Hôtel de Ville" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 16 ;
+    geo:lat 4.359909e+01 ;
+    geo:long 3.894866e+00 .
+
+ex:Montpellier30 a dbr:Bicycle-sharing_system ;
+    rdfs:label "031 Voltaire" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 8 ;
+    geo:lat 4.360377e+01 ;
+    geo:long 3.888659e+00 .
+
+ex:Montpellier31 a dbr:Bicycle-sharing_system ;
+    rdfs:label "032 Prés d'Arènes" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 8 ;
+    geo:lat 4.359048e+01 ;
+    geo:long 3.884611e+00 .
+
+ex:Montpellier32 a dbr:Bicycle-sharing_system ;
+    rdfs:label "033 Garcia Lorca" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 8 ;
+    geo:lat 4.359076e+01 ;
+    geo:long 3.890616e+00 .
+
+ex:Montpellier33 a dbr:Bicycle-sharing_system ;
+    rdfs:label "034 Vert Bois" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 16 ;
+    geo:lat 4.363458e+01 ;
+    geo:long 3.86823e+00 .
+
+ex:Montpellier34 a dbr:Bicycle-sharing_system ;
+    rdfs:label "035 Malbosc" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 8 ;
+    geo:lat 4.363368e+01 ;
+    geo:long 3.832861e+00 .
+
+ex:Montpellier35 a dbr:Bicycle-sharing_system ;
+    rdfs:label "036 Occitanie" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 23 ;
+    ex:total 32 ;
+    geo:lat 4.363424e+01 ;
+    geo:long 3.849128e+00 .
+
+ex:Montpellier36 a dbr:Bicycle-sharing_system ;
+    rdfs:label "037 FacdesSciences" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 24 ;
+    geo:lat 4.363102e+01 ;
+    geo:long 3.860697e+00 .
+
+ex:Montpellier37 a dbr:Bicycle-sharing_system ;
+    rdfs:label "038 Fac de Lettres" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 16 ;
+    geo:lat 4.363067e+01 ;
+    geo:long 3.87023e+00 .
+
+ex:Montpellier38 a dbr:Bicycle-sharing_system ;
+    rdfs:label "039 Aiguelongue" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 8 ;
+    geo:lat 4.362616e+01 ;
+    geo:long 3.882492e+00 .
+
+ex:Montpellier39 a dbr:Bicycle-sharing_system ;
+    rdfs:label "040 Jeu de Mail des Abbés" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 8 ;
+    geo:lat 4.36197e+01 ;
+    geo:long 3.883831e+00 .
+
+ex:Montpellier4 a dbr:Bicycle-sharing_system ;
+    rdfs:label "005 Corum" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 12 ;
+    geo:lat 4.361399e+01 ;
+    geo:long 3.8816e+00 .
+
+ex:Montpellier40 a dbr:Bicycle-sharing_system ;
+    rdfs:label "041 Euromédecine" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 8 ;
+    geo:lat 4.363912e+01 ;
+    geo:long 3.828199e+00 .
+
+ex:Montpellier41 a dbr:Bicycle-sharing_system ;
+    rdfs:label "042 Marie Caizergues" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 8 ;
+    geo:lat 4.361987e+01 ;
+    geo:long 3.873812e+00 .
+
+ex:Montpellier42 a dbr:Bicycle-sharing_system ;
+    rdfs:label "043 Sabines" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 8 ;
+    geo:lat 4.358421e+01 ;
+    geo:long 3.860031e+00 .
+
+ex:Montpellier43 a dbr:Bicycle-sharing_system ;
+    rdfs:label "044 Celleneuve" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 8 ;
+    geo:lat 4.361467e+01 ;
+    geo:long 3.832624e+00 .
+
+ex:Montpellier44 a dbr:Bicycle-sharing_system ;
+    rdfs:label "045 Jardin de la Lironde" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 8 ;
+    geo:lat 4.360585e+01 ;
+    geo:long 3.911576e+00 .
+
+ex:Montpellier45 a dbr:Bicycle-sharing_system ;
+    rdfs:label "046 Père Soulas" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 8 ;
+    geo:lat 4.362198e+01 ;
+    geo:long 3.855603e+00 .
+
+ex:Montpellier46 a dbr:Bicycle-sharing_system ;
+    rdfs:label "047 Place Viala" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 8 ;
+    geo:lat 4.361681e+01 ;
+    geo:long 3.855075e+00 .
+
+ex:Montpellier47 a dbr:Bicycle-sharing_system ;
+    rdfs:label "048 Hôtel du Département" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 8 ;
+    geo:lat 4.362168e+01 ;
+    geo:long 3.83477e+00 .
+
+ex:Montpellier48 a dbr:Bicycle-sharing_system ;
+    rdfs:label "049 Tonnelles" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 8 ;
+    geo:lat 4.361516e+01 ;
+    geo:long 3.839466e+00 .
+
+ex:Montpellier49 a dbr:Bicycle-sharing_system ;
+    rdfs:label "050 Parvis Jules Ferry - Gare Saint-Roch" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 8 ;
+    geo:lat 4.360389e+01 ;
+    geo:long 3.879362e+00 .
+
+ex:Montpellier5 a dbr:Bicycle-sharing_system ;
+    rdfs:label "006 Place Albert 1er - St Charles" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 21 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 31 ;
+    geo:lat 4.361677e+01 ;
+    geo:long 3.873375e+00 .
+
+ex:Montpellier50 a dbr:Bicycle-sharing_system ;
+    rdfs:label "051 Pont de Lattes - Gare Saint-Roch" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 12 ;
+    geo:lat 4.360604e+01 ;
+    geo:long 3.882393e+00 .
+
+ex:Montpellier51 a dbr:Bicycle-sharing_system ;
+    rdfs:label "053 Deux Ponts - Gare Saint-Roch" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 8 ;
+    geo:lat 4.360432e+01 ;
+    geo:long 3.880916e+00 .
+
+ex:Montpellier52 a dbr:Bicycle-sharing_system ;
+    rdfs:label "054 Providence - Ovalie" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 8 ;
+    geo:lat 4.358824e+01 ;
+    geo:long 3.853421e+00 .
+
+ex:Montpellier53 a dbr:Bicycle-sharing_system ;
+    rdfs:label "055 Pérols Etang de l'Or" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 34 ;
+    ex:cardPaiement false ;
+    ex:free 34 ;
+    ex:total 68 ;
+    geo:lat 4.355835e+01 ;
+    geo:long 3.963412e+00 .
+
+ex:Montpellier54 a dbr:Bicycle-sharing_system ;
+    rdfs:label "056 Albert 1er - Cathédrale" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 12 ;
+    geo:lat 4.3614e+01 ;
+    geo:long 3.873218e+00 .
+
+ex:Montpellier55 a dbr:Bicycle-sharing_system ;
+    rdfs:label "057 Saint-Guilhem - Courreau" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 8 ;
+    geo:lat 4.3609e+01 ;
+    geo:long 3.872752e+00 .
+
+ex:Montpellier56 a dbr:Bicycle-sharing_system ;
+    rdfs:label "059 Sud De France" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 8 ;
+    geo:lat 4.359562e+01 ;
+    geo:long 3.9235e+00 .
+
+ex:Montpellier6 a dbr:Bicycle-sharing_system ;
+    rdfs:label "007 Foch" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 8 ;
+    geo:lat 4.361099e+01 ;
+    geo:long 3.873345e+00 .
+
+ex:Montpellier7 a dbr:Bicycle-sharing_system ;
+    rdfs:label "008 Halles Castellane" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 12 ;
+    geo:lat 4.360994e+01 ;
+    geo:long 3.877208e+00 .
+
+ex:Montpellier8 a dbr:Bicycle-sharing_system ;
+    rdfs:label "009 Observatoire" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 8 ;
+    geo:lat 4.360608e+01 ;
+    geo:long 3.876931e+00 .
+
+ex:Montpellier9 a dbr:Bicycle-sharing_system ;
+    rdfs:label "010 Rondelet" ;
+    dbo:city dbr:Montpellier ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 16 ;
+    geo:lat 4.360304e+01 ;
+    geo:long 3.875796e+00 .
+

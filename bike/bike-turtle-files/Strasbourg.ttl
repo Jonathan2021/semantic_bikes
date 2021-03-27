@@ -1,0 +1,217 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ex: <http://www.example.com/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Strasbourg0 a dbr:Bicycle-sharing_system ;
+    rdfs:label "124 Auberge de jeunesse" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 16 ;
+    geo:lat 4.856864e+01 ;
+    geo:long 7.795621e+00 .
+
+ex:Strasbourg1 a dbr:Bicycle-sharing_system ;
+    rdfs:label "111 Campus d'Illkirch" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 25 ;
+    ex:total 30 ;
+    geo:lat 4.852962e+01 ;
+    geo:long 7.734226e+00 .
+
+ex:Strasbourg10 a dbr:Bicycle-sharing_system ;
+    rdfs:label "114 Parking Austerlitz" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 21 ;
+    ex:total 30 ;
+    geo:lat 4.8578e+01 ;
+    geo:long 7.751863e+00 .
+
+ex:Strasbourg11 a dbr:Bicycle-sharing_system ;
+    rdfs:label "113 Parking Broglie" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 30 ;
+    geo:lat 4.858541e+01 ;
+    geo:long 7.749395e+00 .
+
+ex:Strasbourg12 a dbr:Bicycle-sharing_system ;
+    rdfs:label "109 Place Arnold" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 28 ;
+    geo:lat 4.85845e+01 ;
+    geo:long 7.768772e+00 .
+
+ex:Strasbourg13 a dbr:Bicycle-sharing_system ;
+    rdfs:label "108 Gare Nord" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 27 ;
+    ex:total 32 ;
+    geo:lat 4.858568e+01 ;
+    geo:long 7.733542e+00 .
+
+ex:Strasbourg14 a dbr:Bicycle-sharing_system ;
+    rdfs:label "106 Gare Sud" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 21 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 32 ;
+    geo:lat 4.858421e+01 ;
+    geo:long 7.734519e+00 .
+
+ex:Strasbourg15 a dbr:Bicycle-sharing_system ;
+    rdfs:label "116 Place Islande" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 16 ;
+    geo:lat 4.858031e+01 ;
+    geo:long 7.776203e+00 .
+
+ex:Strasbourg16 a dbr:Bicycle-sharing_system ;
+    rdfs:label "125 Place du Marché Neudorf" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 32 ;
+    geo:lat 4.856586e+01 ;
+    geo:long 7.759242e+00 .
+
+ex:Strasbourg17 a dbr:Bicycle-sharing_system ;
+    rdfs:label "110 Robertsau Boecklin" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 25 ;
+    ex:total 32 ;
+    geo:lat 4.85981e+01 ;
+    geo:long 7.777902e+00 .
+
+ex:Strasbourg18 a dbr:Bicycle-sharing_system ;
+    rdfs:label "105 Rotonde" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 24 ;
+    ex:total 32 ;
+    geo:lat 4.859164e+01 ;
+    geo:long 7.725089e+00 .
+
+ex:Strasbourg19 a dbr:Bicycle-sharing_system ;
+    rdfs:label "122 Schiltigheim Mairie" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 16 ;
+    geo:lat 4.860676e+01 ;
+    geo:long 7.749183e+00 .
+
+ex:Strasbourg2 a dbr:Bicycle-sharing_system ;
+    rdfs:label "101 Centre" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 22 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 32 ;
+    geo:lat 4.857846e+01 ;
+    geo:long 7.749776e+00 .
+
+ex:Strasbourg20 a dbr:Bicycle-sharing_system ;
+    rdfs:label "107 Université" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 24 ;
+    ex:total 32 ;
+    geo:lat 4.858202e+01 ;
+    geo:long 7.766771e+00 .
+
+ex:Strasbourg3 a dbr:Bicycle-sharing_system ;
+    rdfs:label "102 Centre 2" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 20 ;
+    geo:lat 4.857846e+01 ;
+    geo:long 7.749776e+00 .
+
+ex:Strasbourg4 a dbr:Bicycle-sharing_system ;
+    rdfs:label "126 Espace Européen de l'Entreprise" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 16 ;
+    geo:lat 4.86126e+01 ;
+    geo:long 7.71163e+00 .
+
+ex:Strasbourg5 a dbr:Bicycle-sharing_system ;
+    rdfs:label "103 Gare de Strasbourg" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 21 ;
+    ex:total 31 ;
+    geo:lat 4.858508e+01 ;
+    geo:long 7.735024e+00 .
+
+ex:Strasbourg6 a dbr:Bicycle-sharing_system ;
+    rdfs:label "115 Hoenheim Gare" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 16 ;
+    geo:lat 4.862835e+01 ;
+    geo:long 7.760103e+00 .
+
+ex:Strasbourg7 a dbr:Bicycle-sharing_system ;
+    rdfs:label "112 Hohwart" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 10 ;
+    geo:lat 4.854919e+01 ;
+    geo:long 7.740754e+00 .
+
+ex:Strasbourg8 a dbr:Bicycle-sharing_system ;
+    rdfs:label "123 Koenigshoffen" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 26 ;
+    geo:lat 4.85791e+01 ;
+    geo:long 7.713481e+00 .
+
+ex:Strasbourg9 a dbr:Bicycle-sharing_system ;
+    rdfs:label "127 Ostwald Hôtel de Ville" ;
+    dbo:city dbr:Strasbourg ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 16 ;
+    geo:lat 4.855103e+01 ;
+    geo:long 7.7112e+00 .
+

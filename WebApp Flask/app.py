@@ -16,7 +16,8 @@ app = Flask(__name__, template_folder='templates')
 def getGeoloc(address):
     connect="http://api.positionstack.com/v1/forward?access_key=9b0ba3fad0620bd25e100ce2dfbd1627&country=FR&limit=1&results=latitude,longitude&query="
     connect=connect+address
-    print(connect)
+    print('###### GETTING GEOLOCATION POINT ######')
+    print('URL : ',connect)
     with urllib.request.urlopen(connect) as url:
         data = json.loads(url.read().decode())
     try:
@@ -44,7 +45,7 @@ def getDistance(lat1,lon1,lat2,lon2):
     return distance
 
 def deleteTripleStore(city):
-    query=FusekiUpdate('http://127.0.0.1:3030','bikes')
+    query=FusekiUpdate('http://127.0.0.1:3030','tripleStore')
     sparql="""
 
     PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -61,7 +62,7 @@ def deleteTripleStore(city):
     query.run_sparql(sparql)
 
 def insertNewTriplestore(data):
-    query=FusekiUpdate('http://127.0.0.1:3030','bikes')
+    query=FusekiUpdate('http://127.0.0.1:3030','tripleStore')
     sparql="""
     PREFIX dbo: <http://dbpedia.org/ontology/>
     PREFIX dbr: <http://dbpedia.org/resource/> 
@@ -99,7 +100,6 @@ def postofficesFound():
     features=[x for x in request.form.values()]
     address = features[0]+', '+ features[1]
     distance=int(features[3])
-    print('distance',distance)
     zip=features[2]
     address=address+' '+str(zip)
     data=getGeoloc(address.replace(' ','%20'))
@@ -110,12 +110,25 @@ def postofficesFound():
         dpt=zip[:2]
     else:
         dpt=zip[:1]
-    fuseki_query=FusekiQuery('http://127.0.0.1:3030','post_offices')
-    sparql_str="PREFIX prop: <http://sample.com/prop/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX type: <http://sample.com/type/>\n"
-    sparql_str+="SELECT ?name ?ad ?city ?zip ?dpt ?lat ?long ?phone WHERE {?a rdf:type type:PostOffice . ?a prop:Name ?name . ?a prop:City ?city .?a prop:Zipcode ?zip .?a prop:Dpt \""+str(dpt)+"\"  .?a prop:Address ?ad .?a prop:Lattitude ?lat . ?a prop:Longitude ?long . ?a prop:Phone ?phone . }"
+    fuseki_query=FusekiQuery('http://127.0.0.1:3030','tripleStore')
+    sparql_str="""
+    PREFIX prop: <http://www.example.com/prop/>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX type: <http://www.example.com/type/>
+    SELECT ?name ?ad ?city ?zip ?dpt ?lat ?long ?phone 
+    WHERE {
+        ?a rdf:type type:PostOffice . 
+        ?a prop:Name ?name . 
+        ?a prop:City ?city .
+        ?a prop:Zipcode ?zip .
+        ?a prop:Dpt \""""+str(dpt)+"""\"  .
+        ?a prop:Address ?ad .
+        ?a prop:Lattitude ?lat .
+        ?a prop:Longitude ?long . 
+        ?a prop:Phone ?phone . 
+    }"""
     query_result=fuseki_query.run_sparql(sparql_str)
     result=query_result.convert()
-    print(result)
     result_final=[]
     for i in result['results']['bindings']:
         i["distance"]=np.round(getDistance(data['latitude'],data['longitude'],float(i['lat']['value']),float(i['long']['value'])),2)
@@ -146,12 +159,24 @@ def librariesFound():
         dpt=zip[:2]
     else:
         dpt=zip[:1]
-    fuseki_query=FusekiQuery('http://127.0.0.1:3030','libraries')
-    sparql_str="PREFIX prop: <http://sample.com/prop/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX type: <http://sample.com/type/>\n"
-    sparql_str+="SELECT ?a ?name ?ad ?city ?zip ?dpt ?lat ?long WHERE {?a rdf:type type:Library . ?a prop:Name ?name . ?a prop:City ?city .?a prop:Zipcode ?zip .?a prop:Dpt \""+str(dpt)+"\"  .?a prop:Address ?ad .?a prop:Lattitude ?lat . ?a prop:Longitude ?long . }"
+    fuseki_query=FusekiQuery('http://127.0.0.1:3030','tripleStore')
+    sparql_str="""
+    PREFIX prop: <http://www.example.com/prop/>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX type: <http://www.example.com/type/>
+    SELECT ?a ?name ?ad ?city ?zip ?dpt ?lat ?long 
+    WHERE {
+        ?a rdf:type type:Library . 
+        ?a prop:Name ?name . 
+        ?a prop:City ?city .
+        ?a prop:Zipcode ?zip .
+        ?a prop:Dpt \""""+str(dpt)+"""\" .
+        ?a prop:Address ?ad .
+        ?a prop:Lattitude ?lat . 
+        ?a prop:Longitude ?long . 
+    }"""
     query_result=fuseki_query.run_sparql(sparql_str)
     result=query_result.convert()
-    print(result)
     result_final=[]
     for i in result['results']['bindings']:
         i["distance"]=np.round(getDistance(data['latitude'],data['longitude'],float(i['lat']['value']),float(i['long']['value'])),2)
@@ -162,24 +187,18 @@ def librariesFound():
     print(result_final)
     return render_template("libraries_found.html",title='Found Libraries',result_final=result_final)
 
-
-
-
 @app.route('/route/itinerary',methods=['POST'])
 def itinerary():
     features=[x for x in request.form.values()]
     addressFrom=features[0]+", "+features[2]
     addressTo=features[1]+", "+features[2]
     city=features[2]
-    print(city)
     dataFrom=getGeoloc(addressFrom.replace(' ','%20'))
     dataTo=getGeoloc(addressTo.replace(' ','%20'))
     if dataFrom is None or dataTo is None:
         return render_template("not_found.html",title='Oops !')
     updateTriplestore(city,parse(city).split('\n',7)[7])
-    print(dataFrom)
-    print(dataTo)
-    fuseki_query=FusekiQuery('http://127.0.0.1:3030','bikes')
+    fuseki_query=FusekiQuery('http://127.0.0.1:3030','ds')
     sparql_str="""
     PREFIX dbo: <http://dbpedia.org/ontology/> 
     PREFIX dbr: <http://dbpedia.org/resource/> 
@@ -201,7 +220,6 @@ def itinerary():
     """
     query_result=fuseki_query.run_sparql(sparql_str)
     result=query_result.convert()
-    print(result)
     result_depart=None
     result_arrivee=None
     for i in result['results']['bindings']:
@@ -223,16 +241,12 @@ def itinerary():
             result_arrivee=i
             result_arrivee['distance']=distance_arrivee
 
-    print(result_depart)
-    print(result_arrivee)
     distance_totale=np.round(getDistance(dataFrom['latitude'],dataFrom['longitude'],dataTo['latitude'],dataTo['longitude']),2)
     if result_depart== None or result_arrivee==None or (float(result_depart['lat']['value'])==float(result_arrivee['lat']['value']) and float(result_depart['long']['value'])==float(result_arrivee['long']['value'])):
         found=False
-        print(found)
         return render_template("itinerary.html",title='Your Itinerary',found=found,distance_totale=distance_totale,addressFrom=addressFrom,addressTo=addressTo)
     else:
         found=True
-        print(found)
         distance_velo=np.round(getDistance(float(result_depart['lat']['value']),float(result_depart['long']['value']),float(result_arrivee['lat']['value']),float(result_arrivee['long']['value'])),2)
         return render_template("itinerary.html",title='Your Itinerary',distance_velo=distance_velo,distance_totale=distance_totale,addressFrom=addressFrom,addressTo=addressTo,
             found=found,result_depart=result_depart,result_arrivee=result_arrivee)

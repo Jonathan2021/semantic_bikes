@@ -1,0 +1,4287 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ex: <http://www.example.com/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Lyon0 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Stalingard" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 13 ;
+    geo:lat 4.574958e+01 ;
+    geo:long 4.852966e+00 .
+
+ex:Lyon1 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Flammarion" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 18 ;
+    geo:lat 4.577933e+01 ;
+    geo:long 4.820303e+00 .
+
+ex:Lyon10 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Théâtre Nouvelle Génération" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 16 ;
+    geo:lat 4.57773e+01 ;
+    geo:long 4.803312e+00 .
+
+ex:Lyon100 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Université Lyon III" ;
+    dbo:city dbr:Lyon ;
+    ex:available 28 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 36 ;
+    geo:lat 4.574854e+01 ;
+    geo:long 4.861542e+00 .
+
+ex:Lyon101 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Hachette" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 15 ;
+    geo:lat 4.575292e+01 ;
+    geo:long 4.863853e+00 .
+
+ex:Lyon102 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Servant / Jaboulay" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 16 ;
+    geo:lat 4.574677e+01 ;
+    geo:long 4.842051e+00 .
+
+ex:Lyon103 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Doua / Avenue des Arts" ;
+    dbo:city dbr:Lyon ;
+    ex:available 25 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 30 ;
+    geo:lat 4.578351e+01 ;
+    geo:long 4.871273e+00 .
+
+ex:Lyon104 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Valdo / Rivet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 18 ;
+    geo:lat 4.575048e+01 ;
+    geo:long 4.788774e+00 .
+
+ex:Lyon105 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Charles Hernu" ;
+    dbo:city dbr:Lyon ;
+    ex:available 17 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 20 ;
+    geo:lat 4.577031e+01 ;
+    geo:long 4.862002e+00 .
+
+ex:Lyon106 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Genis Laval - Médiathèque" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 12 ;
+    geo:lat 4.569781e+01 ;
+    geo:long 4.794773e+00 .
+
+ex:Lyon107 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bron - Place Curial" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 22 ;
+    ex:total 25 ;
+    geo:lat 4.573667e+01 ;
+    geo:long 4.9171e+00 .
+
+ex:Lyon108 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Bir-Hakeim" ;
+    dbo:city dbr:Lyon ;
+    ex:available 15 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 19 ;
+    geo:lat 4.575259e+01 ;
+    geo:long 4.85571e+00 .
+
+ex:Lyon109 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Quai Lassagne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 16 ;
+    geo:lat 4.57722e+01 ;
+    geo:long 4.837912e+00 .
+
+ex:Lyon11 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Primat / Decorps" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 13 ;
+    geo:lat 4.575712e+01 ;
+    geo:long 4.899993e+00 .
+
+ex:Lyon110 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Rockfeller / Esquirol" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 19 ;
+    geo:lat 4.574133e+01 ;
+    geo:long 4.885541e+00 .
+
+ex:Lyon111 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Cité Internationale - Cinéma" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 27 ;
+    ex:total 32 ;
+    geo:lat 4.57847e+01 ;
+    geo:long 4.851908e+00 .
+
+ex:Lyon112 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Bertone" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 12 ;
+    geo:lat 4.577762e+01 ;
+    geo:long 4.834501e+00 .
+
+ex:Lyon113 a dbr:Bicycle-sharing_system ;
+    rdfs:label "République / Stella" ;
+    dbo:city dbr:Lyon ;
+    ex:available 25 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 27 ;
+    geo:lat 4.576071e+01 ;
+    geo:long 4.836289e+00 .
+
+ex:Lyon114 a dbr:Bicycle-sharing_system ;
+    rdfs:label "11 novembre / Gaston Berger" ;
+    dbo:city dbr:Lyon ;
+    ex:available 27 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 35 ;
+    geo:lat 4.577906e+01 ;
+    geo:long 4.871496e+00 .
+
+ex:Lyon115 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Aristide Briand" ;
+    dbo:city dbr:Lyon ;
+    ex:available 22 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 38 ;
+    geo:lat 4.5753e+01 ;
+    geo:long 4.850247e+00 .
+
+ex:Lyon116 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Balmont" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 12 ;
+    geo:lat 4.578932e+01 ;
+    geo:long 4.79916e+00 .
+
+ex:Lyon117 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vaulx - Poudrette / La Soie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 20 ;
+    geo:lat 4.57644e+01 ;
+    geo:long 4.919276e+00 .
+
+ex:Lyon118 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Créqui / Lafayette" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 15 ;
+    geo:lat 4.57638e+01 ;
+    geo:long 4.847062e+00 .
+
+ex:Lyon119 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Zola / France" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 16 ;
+    geo:lat 4.576807e+01 ;
+    geo:long 4.887124e+00 .
+
+ex:Lyon12 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Paul Santy" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 16 ;
+    geo:lat 4.572852e+01 ;
+    geo:long 4.877306e+00 .
+
+ex:Lyon120 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Pressensé" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 16 ;
+    geo:lat 4.576917e+01 ;
+    geo:long 4.89677e+00 .
+
+ex:Lyon121 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Avenue Verguin" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 20 ;
+    geo:lat 4.577291e+01 ;
+    geo:long 4.856327e+00 .
+
+ex:Lyon122 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Techsud" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 12 ;
+    geo:lat 4.57228e+01 ;
+    geo:long 4.842706e+00 .
+
+ex:Lyon123 a dbr:Bicycle-sharing_system ;
+    rdfs:label "IUT - Feyssine" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 26 ;
+    ex:total 30 ;
+    geo:lat 4.578563e+01 ;
+    geo:long 4.88241e+00 .
+
+ex:Lyon124 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Rouget de L'Isle" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 16 ;
+    geo:lat 4.575396e+01 ;
+    geo:long 4.867353e+00 .
+
+ex:Lyon125 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gare des Brotteaux" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 16 ;
+    geo:lat 4.576691e+01 ;
+    geo:long 4.858992e+00 .
+
+ex:Lyon126 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bel Air / Les Brosses" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 20 ;
+    geo:lat 4.575791e+01 ;
+    geo:long 4.910807e+00 .
+
+ex:Lyon127 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Clos Savaron" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 20 ;
+    geo:lat 4.578264e+01 ;
+    geo:long 4.825559e+00 .
+
+ex:Lyon128 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Condorcet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 23 ;
+    geo:lat 4.577903e+01 ;
+    geo:long 4.866863e+00 .
+
+ex:Lyon129 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Exupéry" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 15 ;
+    geo:lat 4.575886e+01 ;
+    geo:long 4.87875e+00 .
+
+ex:Lyon13 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bellecour / République" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 18 ;
+    geo:lat 4.575799e+01 ;
+    geo:long 4.834594e+00 .
+
+ex:Lyon130 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Allée de l'Europe" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 12 ;
+    geo:lat 4.578364e+01 ;
+    geo:long 4.794525e+00 .
+
+ex:Lyon131 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Albéric Pont" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 16 ;
+    geo:lat 4.575344e+01 ;
+    geo:long 4.804401e+00 .
+
+ex:Lyon132 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Lumière / Trouilhet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 16 ;
+    geo:lat 4.574357e+01 ;
+    geo:long 4.870102e+00 .
+
+ex:Lyon133 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Sainte-Blandine" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 16 ;
+    geo:lat 4.574442e+01 ;
+    geo:long 4.822143e+00 .
+
+ex:Lyon134 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place de l'Hippodrome" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 24 ;
+    geo:lat 4.574558e+01 ;
+    geo:long 4.823533e+00 .
+
+ex:Lyon135 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place de la Ferrandière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 20 ;
+    geo:lat 4.575947e+01 ;
+    geo:long 4.869343e+00 .
+
+ex:Lyon136 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Ménival / Eisenhower" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 12 ;
+    geo:lat 4.575676e+01 ;
+    geo:long 4.783246e+00 .
+
+ex:Lyon137 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Garibaldi / Domer" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 19 ;
+    geo:lat 4.574773e+01 ;
+    geo:long 4.851627e+00 .
+
+ex:Lyon138 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Feuillat / Lacassagne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 16 ;
+    geo:lat 4.574956e+01 ;
+    geo:long 4.875933e+00 .
+
+ex:Lyon139 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Friche RVI" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 20 ;
+    geo:lat 4.574832e+01 ;
+    geo:long 4.875924e+00 .
+
+ex:Lyon14 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Laënnec / Pinel" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 15 ;
+    geo:lat 4.573537e+01 ;
+    geo:long 4.889539e+00 .
+
+ex:Lyon140 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Delore / Audibert & Lavirotte" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 18 ;
+    geo:lat 4.57358e+01 ;
+    geo:long 4.856813e+00 .
+
+ex:Lyon141 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place de la Paix" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 20 ;
+    geo:lat 4.576802e+01 ;
+    geo:long 4.831741e+00 .
+
+ex:Lyon142 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Paul Bert / Garibaldi" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 20 ;
+    geo:lat 4.57571e+01 ;
+    geo:long 4.853481e+00 .
+
+ex:Lyon143 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Sans Souci" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 20 ;
+    geo:lat 4.574725e+01 ;
+    geo:long 4.865286e+00 .
+
+ex:Lyon144 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Décines - Centre" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 20 ;
+    geo:lat 4.577187e+01 ;
+    geo:long 4.955767e+00 .
+
+ex:Lyon145 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Cité Internationale" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 21 ;
+    geo:lat 4.578542e+01 ;
+    geo:long 4.854124e+00 .
+
+ex:Lyon146 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Maréchal Lyautey" ;
+    dbo:city dbr:Lyon ;
+    ex:available 19 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 20 ;
+    geo:lat 4.576937e+01 ;
+    geo:long 4.842318e+00 .
+
+ex:Lyon147 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bourbonnais" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 12 ;
+    geo:lat 4.577346e+01 ;
+    geo:long 4.800288e+00 .
+
+ex:Lyon148 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Perrache Est" ;
+    dbo:city dbr:Lyon ;
+    ex:available 17 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 20 ;
+    geo:lat 4.57461e+01 ;
+    geo:long 4.825605e+00 .
+
+ex:Lyon149 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Regaud" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 12 ;
+    geo:lat 4.576308e+01 ;
+    geo:long 4.834287e+00 .
+
+ex:Lyon15 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Rebatel / Saint-Maximin" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 29 ;
+    ex:total 30 ;
+    geo:lat 4.574782e+01 ;
+    geo:long 4.87227e+00 .
+
+ex:Lyon150 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Parc du Centre" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 16 ;
+    geo:lat 4.577191e+01 ;
+    geo:long 4.879071e+00 .
+
+ex:Lyon151 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Berthelot / Cazeneuve" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 20 ;
+    geo:lat 4.573733e+01 ;
+    geo:long 4.865494e+00 .
+
+ex:Lyon152 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Métro Flachet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 22 ;
+    geo:lat 4.576709e+01 ;
+    geo:long 4.892429e+00 .
+
+ex:Lyon153 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Part-Dieu / Villette" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 30 ;
+    geo:lat 4.576006e+01 ;
+    geo:long 4.861674e+00 .
+
+ex:Lyon154 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Gerson" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 20 ;
+    geo:lat 4.576705e+01 ;
+    geo:long 4.827048e+00 .
+
+ex:Lyon155 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Perrache / Carnot" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 18 ;
+    geo:lat 4.57501e+01 ;
+    geo:long 4.828052e+00 .
+
+ex:Lyon156 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Confluence / Docks" ;
+    dbo:city dbr:Lyon ;
+    ex:available 24 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 26 ;
+    geo:lat 4.573963e+01 ;
+    geo:long 4.815026e+00 .
+
+ex:Lyon157 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Sala / Rue du Plat" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 14 ;
+    geo:lat 4.575681e+01 ;
+    geo:long 4.828374e+00 .
+
+ex:Lyon158 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Terreaux / Terme" ;
+    dbo:city dbr:Lyon ;
+    ex:available 16 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 16 ;
+    geo:lat 4.576773e+01 ;
+    geo:long 4.832135e+00 .
+
+ex:Lyon159 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Pêcherie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 17 ;
+    geo:lat 4.576595e+01 ;
+    geo:long 4.831178e+00 .
+
+ex:Lyon16 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Zola / Passage Rey" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 19 ;
+    geo:lat 4.57701e+01 ;
+    geo:long 4.87669e+00 .
+
+ex:Lyon160 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Raspail" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 22 ;
+    geo:lat 4.575577e+01 ;
+    geo:long 4.840733e+00 .
+
+ex:Lyon161 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Doua / Rue des sports" ;
+    dbo:city dbr:Lyon ;
+    ex:available 22 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 30 ;
+    geo:lat 4.578449e+01 ;
+    geo:long 4.877404e+00 .
+
+ex:Lyon162 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vaillant / Perroncel" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 17 ;
+    geo:lat 4.57754e+01 ;
+    geo:long 4.880263e+00 .
+
+ex:Lyon163 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Anatole France / Barbusse" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 20 ;
+    geo:lat 4.576811e+01 ;
+    geo:long 4.879081e+00 .
+
+ex:Lyon164 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jean Jaurès" ;
+    dbo:city dbr:Lyon ;
+    ex:available 16 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 16 ;
+    geo:lat 4.573752e+01 ;
+    geo:long 4.837509e+00 .
+
+ex:Lyon165 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Parc des Berges" ;
+    dbo:city dbr:Lyon ;
+    ex:available 25 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 25 ;
+    geo:lat 4.573774e+01 ;
+    geo:long 4.824488e+00 .
+
+ex:Lyon166 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Patinoire Baraban" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.576205e+01 ;
+    geo:long 4.8685e+00 .
+
+ex:Lyon167 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Tabareau" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 10 ;
+    geo:lat 4.577408e+01 ;
+    geo:long 4.82516e+00 .
+
+ex:Lyon168 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Danton" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 18 ;
+    geo:lat 4.575481e+01 ;
+    geo:long 4.857574e+00 .
+
+ex:Lyon169 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Lafayette / Corneille" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 13 ;
+    geo:lat 4.576376e+01 ;
+    geo:long 4.843777e+00 .
+
+ex:Lyon17 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jean XXIII" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 16 ;
+    geo:lat 4.574033e+01 ;
+    geo:long 4.874194e+00 .
+
+ex:Lyon170 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Berthelot / Route de Vienne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 15 ;
+    geo:lat 4.574258e+01 ;
+    geo:long 4.850564e+00 .
+
+ex:Lyon171 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Charmettes / Bellecombe" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 16 ;
+    geo:lat 4.576637e+01 ;
+    geo:long 4.865084e+00 .
+
+ex:Lyon172 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Institut Lumière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 18 ;
+    geo:lat 4.574583e+01 ;
+    geo:long 4.870639e+00 .
+
+ex:Lyon173 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Francis de Pressenssé" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 22 ;
+    geo:lat 4.573143e+01 ;
+    geo:long 4.860038e+00 .
+
+ex:Lyon174 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Masset / Saint-Pierre de Vaise" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 16 ;
+    geo:lat 4.577048e+01 ;
+    geo:long 4.8009e+00 .
+
+ex:Lyon175 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place de la paix" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 17 ;
+    geo:lat 4.57521e+01 ;
+    geo:long 4.914643e+00 .
+
+ex:Lyon176 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place du Lac" ;
+    dbo:city dbr:Lyon ;
+    ex:available 17 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 19 ;
+    geo:lat 4.575889e+01 ;
+    geo:long 4.853768e+00 .
+
+ex:Lyon177 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Part-Dieu / Francfort" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 28 ;
+    geo:lat 4.576061e+01 ;
+    geo:long 4.863086e+00 .
+
+ex:Lyon178 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mermoz / Michelet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 12 ;
+    geo:lat 4.573327e+01 ;
+    geo:long 4.878601e+00 .
+
+ex:Lyon179 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Baldassini / Gerland" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 20 ;
+    geo:lat 4.57277e+01 ;
+    geo:long 4.837382e+00 .
+
+ex:Lyon18 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Trarieux / Lacassagne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 24 ;
+    geo:lat 4.57453e+01 ;
+    geo:long 4.889042e+00 .
+
+ex:Lyon180 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Ecully - Mairie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 12 ;
+    geo:lat 4.577509e+01 ;
+    geo:long 4.778673e+00 .
+
+ex:Lyon181 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Farge / Ayasse" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 20 ;
+    geo:lat 4.573567e+01 ;
+    geo:long 4.827719e+00 .
+
+ex:Lyon182 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Albert Thomas / Villon" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.574672e+01 ;
+    geo:long 4.867429e+00 .
+
+ex:Lyon183 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jacques Brel" ;
+    dbo:city dbr:Lyon ;
+    ex:available 21 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 23 ;
+    geo:lat 4.577422e+01 ;
+    geo:long 4.864291e+00 .
+
+ex:Lyon184 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Musée Guimet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 15 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 15 ;
+    geo:lat 4.57745e+01 ;
+    geo:long 4.848477e+00 .
+
+ex:Lyon185 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vaulx - La Soie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 21 ;
+    ex:total 25 ;
+    geo:lat 4.576081e+01 ;
+    geo:long 4.920604e+00 .
+
+ex:Lyon186 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Birmingham" ;
+    dbo:city dbr:Lyon ;
+    ex:available 19 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 20 ;
+    geo:lat 4.577463e+01 ;
+    geo:long 4.813416e+00 .
+
+ex:Lyon187 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Kimmerling" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 16 ;
+    geo:lat 4.575292e+01 ;
+    geo:long 4.898899e+00 .
+
+ex:Lyon188 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Musée des Confluences" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 20 ;
+    geo:lat 4.573331e+01 ;
+    geo:long 4.81892e+00 .
+
+ex:Lyon189 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Fons - Théatre" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 18 ;
+    geo:lat 4.570809e+01 ;
+    geo:long 4.861776e+00 .
+
+ex:Lyon19 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Buyer / Apollinaire" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 22 ;
+    geo:lat 4.576201e+01 ;
+    geo:long 4.80276e+00 .
+
+ex:Lyon190 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Conservatoire bis" ;
+    dbo:city dbr:Lyon ;
+    ex:available 22 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 22 ;
+    geo:lat 4.577039e+01 ;
+    geo:long 4.814246e+00 .
+
+ex:Lyon191 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Lycée Louise Labé" ;
+    dbo:city dbr:Lyon ;
+    ex:available 20 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 20 ;
+    geo:lat 4.574028e+01 ;
+    geo:long 4.832059e+00 .
+
+ex:Lyon192 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Sacré Coeur" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 16 ;
+    geo:lat 4.575786e+01 ;
+    geo:long 4.868351e+00 .
+
+ex:Lyon193 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Guichard" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 16 ;
+    geo:lat 4.575882e+01 ;
+    geo:long 4.846453e+00 .
+
+ex:Lyon194 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Anatole France / Zola" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 13 ;
+    geo:lat 4.576884e+01 ;
+    geo:long 4.884292e+00 .
+
+ex:Lyon195 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Tolozan" ;
+    dbo:city dbr:Lyon ;
+    ex:available 28 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 36 ;
+    geo:lat 4.57696e+01 ;
+    geo:long 4.837608e+00 .
+
+ex:Lyon196 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Corneille / Servient" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 13 ;
+    geo:lat 4.575998e+01 ;
+    geo:long 4.84449e+00 .
+
+ex:Lyon197 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Oullins - Gare" ;
+    dbo:city dbr:Lyon ;
+    ex:available 29 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 40 ;
+    geo:lat 4.571703e+01 ;
+    geo:long 4.814136e+00 .
+
+ex:Lyon198 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Croix Barret / Artillerie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 17 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 32 ;
+    geo:lat 4.573679e+01 ;
+    geo:long 4.841152e+00 .
+
+ex:Lyon199 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Anatole France / Alsace" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.576691e+01 ;
+    geo:long 4.870161e+00 .
+
+ex:Lyon2 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place des Compagnons de la chanson" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 18 ;
+    geo:lat 4.575653e+01 ;
+    geo:long 4.796612e+00 .
+
+ex:Lyon20 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Neuville - Quai Pasteur" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 20 ;
+    geo:lat 4.587661e+01 ;
+    geo:long 4.838624e+00 .
+
+ex:Lyon200 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Baratin" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 12 ;
+    geo:lat 4.57606e+01 ;
+    geo:long 4.900697e+00 .
+
+ex:Lyon201 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Commandant Arnaud" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 17 ;
+    geo:lat 4.577973e+01 ;
+    geo:long 4.834707e+00 .
+
+ex:Lyon202 a dbr:Bicycle-sharing_system ;
+    rdfs:label "CROUS" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 17 ;
+    geo:lat 4.574543e+01 ;
+    geo:long 4.84778e+00 .
+
+ex:Lyon203 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place des tapis" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 17 ;
+    geo:lat 4.577603e+01 ;
+    geo:long 4.829621e+00 .
+
+ex:Lyon204 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Faure / Meynis" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 27 ;
+    ex:total 28 ;
+    geo:lat 4.575506e+01 ;
+    geo:long 4.871397e+00 .
+
+ex:Lyon205 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Marengo" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 26 ;
+    ex:total 27 ;
+    geo:lat 4.575914e+01 ;
+    geo:long 4.875994e+00 .
+
+ex:Lyon206 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place d'Espagne / Stade Kruger" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 21 ;
+    ex:total 22 ;
+    geo:lat 4.575417e+01 ;
+    geo:long 4.905292e+00 .
+
+ex:Lyon207 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Perrin / Jean Jaurès" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 33 ;
+    ex:total 34 ;
+    geo:lat 4.575839e+01 ;
+    geo:long 4.885609e+00 .
+
+ex:Lyon208 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Antoine / Grenette" ;
+    dbo:city dbr:Lyon ;
+    ex:available "" ;
+    ex:cardPaiement "" ;
+    ex:free "" ;
+    ex:total 20 ;
+    geo:lat 4.576342e+01 ;
+    geo:long 4.832101e+00 .
+
+ex:Lyon209 a dbr:Bicycle-sharing_system ;
+    rdfs:label "" ;
+    dbo:city dbr:Lyon ;
+    ex:available "" ;
+    ex:cardPaiement "" ;
+    ex:free "" ;
+    ex:total 18 ;
+    geo:lat 4.574451e+01 ;
+    geo:long 4.826775e+00 .
+
+ex:Lyon21 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saxe / Moncey" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 28 ;
+    geo:lat 4.575756e+01 ;
+    geo:long 4.846118e+00 .
+
+ex:Lyon210 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Salengro / Feyssine" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.578298e+01 ;
+    geo:long 4.890635e+00 .
+
+ex:Lyon211 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place de Trion" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 16 ;
+    geo:lat 4.575791e+01 ;
+    geo:long 4.813135e+00 .
+
+ex:Lyon212 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Servient / Garibaldi" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 17 ;
+    geo:lat 4.576078e+01 ;
+    geo:long 4.852679e+00 .
+
+ex:Lyon213 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Cazeneuve" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 19 ;
+    geo:lat 4.573402e+01 ;
+    geo:long 4.862902e+00 .
+
+ex:Lyon214 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jaurès / Gerland" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 20 ;
+    geo:lat 4.573981e+01 ;
+    geo:long 4.840307e+00 .
+
+ex:Lyon215 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jean XXIII / Mermoz" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 20 ;
+    geo:lat 4.573648e+01 ;
+    geo:long 4.869805e+00 .
+
+ex:Lyon216 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Institut d'Art contemporain" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 23 ;
+    ex:total 25 ;
+    geo:lat 4.576145e+01 ;
+    geo:long 4.872466e+00 .
+
+ex:Lyon217 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Einstein / 11 novembre 1918" ;
+    dbo:city dbr:Lyon ;
+    ex:available 23 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 34 ;
+    geo:lat 4.577944e+01 ;
+    geo:long 4.87409e+00 .
+
+ex:Lyon218 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Caluire - Gare de Cuire" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 18 ;
+    geo:lat 4.578578e+01 ;
+    geo:long 4.833713e+00 .
+
+ex:Lyon219 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jaurès / Lagrange" ;
+    dbo:city dbr:Lyon ;
+    ex:available 15 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 30 ;
+    geo:lat 4.574391e+01 ;
+    geo:long 4.841424e+00 .
+
+ex:Lyon22 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Caluire / La Rochette" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 20 ;
+    geo:lat 4.579167e+01 ;
+    geo:long 4.823597e+00 .
+
+ex:Lyon220 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Docteur Long / Aubépins" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 16 ;
+    geo:lat 4.575254e+01 ;
+    geo:long 4.894267e+00 .
+
+ex:Lyon221 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vénissieux - Parilly" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 24 ;
+    ex:total 25 ;
+    geo:lat 4.571971e+01 ;
+    geo:long 4.888535e+00 .
+
+ex:Lyon222 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Champvert" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 15 ;
+    geo:lat 4.576008e+01 ;
+    geo:long 4.798408e+00 .
+
+ex:Lyon223 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Dauphiné / Saint-Maximin" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 28 ;
+    ex:total 30 ;
+    geo:lat 4.574995e+01 ;
+    geo:long 4.86465e+00 .
+
+ex:Lyon224 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Charpennes" ;
+    dbo:city dbr:Lyon ;
+    ex:available 41 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 46 ;
+    geo:lat 4.577023e+01 ;
+    geo:long 4.863133e+00 .
+
+ex:Lyon225 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Conservatoire" ;
+    dbo:city dbr:Lyon ;
+    ex:available 15 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 19 ;
+    geo:lat 4.576978e+01 ;
+    geo:long 4.812676e+00 .
+
+ex:Lyon226 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Puvis de Chavannes" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 10 ;
+    geo:lat 4.577176e+01 ;
+    geo:long 4.844604e+00 .
+
+ex:Lyon227 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saxe / Gambetta" ;
+    dbo:city dbr:Lyon ;
+    ex:available 24 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 26 ;
+    geo:lat 4.575379e+01 ;
+    geo:long 4.848042e+00 .
+
+ex:Lyon228 a dbr:Bicycle-sharing_system ;
+    rdfs:label "4 août 1789 / Pressensé" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 19 ;
+    geo:lat 4.576608e+01 ;
+    geo:long 4.89861e+00 .
+
+ex:Lyon229 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Parc de Gerland" ;
+    dbo:city dbr:Lyon ;
+    ex:available 21 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 26 ;
+    geo:lat 4.572435e+01 ;
+    geo:long 4.826821e+00 .
+
+ex:Lyon23 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Quai du Commerce" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement true ;
+    ex:free 0 ;
+    ex:total 23 ;
+    geo:lat 4.578237e+01 ;
+    geo:long 4.810747e+00 .
+
+ex:Lyon230 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Croix Luizet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 22 ;
+    geo:lat 4.578064e+01 ;
+    geo:long 4.883497e+00 .
+
+ex:Lyon231 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Champvert" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 18 ;
+    geo:lat 4.57639e+01 ;
+    geo:long 4.792714e+00 .
+
+ex:Lyon232 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Lacour / Artillerie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 20 ;
+    geo:lat 4.572946e+01 ;
+    geo:long 4.844178e+00 .
+
+ex:Lyon233 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Chazette Lassagne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.577293e+01 ;
+    geo:long 4.83727e+00 .
+
+ex:Lyon234 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Andréi Sakharov" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 12 ;
+    geo:lat 4.578652e+01 ;
+    geo:long 4.797071e+00 .
+
+ex:Lyon235 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place des Pavillons" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 13 ;
+    geo:lat 4.57295e+01 ;
+    geo:long 4.829702e+00 .
+
+ex:Lyon236 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Quai Sarrail" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 14 ;
+    geo:lat 4.576683e+01 ;
+    geo:long 4.841139e+00 .
+
+ex:Lyon237 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Piscine du Rhône" ;
+    dbo:city dbr:Lyon ;
+    ex:available 22 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 31 ;
+    geo:lat 4.575361e+01 ;
+    geo:long 4.838221e+00 .
+
+ex:Lyon238 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Terreaux / Chenavard" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 18 ;
+    geo:lat 4.576677e+01 ;
+    geo:long 4.832931e+00 .
+
+ex:Lyon239 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bataille / Krüger" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 18 ;
+    geo:lat 4.573627e+01 ;
+    geo:long 4.879737e+00 .
+
+ex:Lyon24 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Blum / Faÿs" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 16 ;
+    geo:lat 4.576052e+01 ;
+    geo:long 4.905945e+00 .
+
+ex:Lyon240 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Sala / Charité" ;
+    dbo:city dbr:Lyon ;
+    ex:available 21 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 21 ;
+    geo:lat 4.575447e+01 ;
+    geo:long 4.833011e+00 .
+
+ex:Lyon241 a dbr:Bicycle-sharing_system ;
+    rdfs:label "La Perralière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 22 ;
+    geo:lat 4.576456e+01 ;
+    geo:long 4.892334e+00 .
+
+ex:Lyon242 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Carret / Sédaillan" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 18 ;
+    geo:lat 4.579248e+01 ;
+    geo:long 4.820578e+00 .
+
+ex:Lyon243 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Marietton Ouest" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 20 ;
+    geo:lat 4.577609e+01 ;
+    geo:long 4.799738e+00 .
+
+ex:Lyon244 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vaulx - Hôtel de ville" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 30 ;
+    geo:lat 4.577817e+01 ;
+    geo:long 4.920517e+00 .
+
+ex:Lyon245 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Centre Berthelot" ;
+    dbo:city dbr:Lyon ;
+    ex:available 19 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 19 ;
+    geo:lat 4.574736e+01 ;
+    geo:long 4.836e+00 .
+
+ex:Lyon246 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Rillieux - Canellas" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 12 ;
+    geo:lat 4.580509e+01 ;
+    geo:long 4.884744e+00 .
+
+ex:Lyon247 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Moulin à Vent" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 22 ;
+    geo:lat 4.572968e+01 ;
+    geo:long 4.854182e+00 .
+
+ex:Lyon248 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Boissier" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 20 ;
+    geo:lat 4.578628e+01 ;
+    geo:long 4.926886e+00 .
+
+ex:Lyon249 a dbr:Bicycle-sharing_system ;
+    rdfs:label "INSA" ;
+    dbo:city dbr:Lyon ;
+    ex:available 20 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 40 ;
+    geo:lat 4.578222e+01 ;
+    geo:long 4.876955e+00 .
+
+ex:Lyon25 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bouvier" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 16 ;
+    geo:lat 4.577946e+01 ;
+    geo:long 4.891581e+00 .
+
+ex:Lyon250 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place St Louis" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 15 ;
+    geo:lat 4.574908e+01 ;
+    geo:long 4.84774e+00 .
+
+ex:Lyon251 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Sainte-Irénée" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.575495e+01 ;
+    geo:long 4.812421e+00 .
+
+ex:Lyon252 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Collonges - Gare" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 24 ;
+    geo:lat 4.583087e+01 ;
+    geo:long 4.846979e+00 .
+
+ex:Lyon253 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Neuville - Stade" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 15 ;
+    geo:lat 4.587088e+01 ;
+    geo:long 4.839599e+00 .
+
+ex:Lyon254 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Stalingrad" ;
+    dbo:city dbr:Lyon ;
+    ex:available 20 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 21 ;
+    geo:lat 4.577436e+01 ;
+    geo:long 4.859155e+00 .
+
+ex:Lyon255 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Hôtel Dieu / Pont de la Guillotière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 23 ;
+    ex:cardPaiement false ;
+    ex:free 27 ;
+    ex:total 50 ;
+    geo:lat 4.575742e+01 ;
+    geo:long 4.837062e+00 .
+
+ex:Lyon256 a dbr:Bicycle-sharing_system ;
+    rdfs:label "République / Poulaillerie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 31 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 32 ;
+    geo:lat 4.576407e+01 ;
+    geo:long 4.835525e+00 .
+
+ex:Lyon257 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Hôpital Saint-Jean de Dieu" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 20 ;
+    geo:lat 4.572414e+01 ;
+    geo:long 4.854176e+00 .
+
+ex:Lyon258 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jaurès / Bollier" ;
+    dbo:city dbr:Lyon ;
+    ex:available 27 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 34 ;
+    geo:lat 4.573473e+01 ;
+    geo:long 4.835497e+00 .
+
+ex:Lyon259 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Fons - Arsenal" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 26 ;
+    ex:total 27 ;
+    geo:lat 4.571234e+01 ;
+    geo:long 4.855274e+00 .
+
+ex:Lyon26 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Boulevard des Belges" ;
+    dbo:city dbr:Lyon ;
+    ex:available 15 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 15 ;
+    geo:lat 4.577333e+01 ;
+    geo:long 4.851989e+00 .
+
+ex:Lyon260 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Parc Blandan" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 25 ;
+    geo:lat 4.574596e+01 ;
+    geo:long 4.851196e+00 .
+
+ex:Lyon261 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Château Gaillard / Fort" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 16 ;
+    geo:lat 4.577475e+01 ;
+    geo:long 4.887971e+00 .
+
+ex:Lyon262 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bayard / Rambaud" ;
+    dbo:city dbr:Lyon ;
+    ex:available 20 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 30 ;
+    geo:lat 4.574592e+01 ;
+    geo:long 4.817174e+00 .
+
+ex:Lyon263 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Chazière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 20 ;
+    geo:lat 4.577542e+01 ;
+    geo:long 4.81789e+00 .
+
+ex:Lyon264 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mairie de Villeurbanne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 24 ;
+    ex:total 26 ;
+    geo:lat 4.576683e+01 ;
+    geo:long 4.880115e+00 .
+
+ex:Lyon265 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Ampère / Bourse" ;
+    dbo:city dbr:Lyon ;
+    ex:available 25 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 26 ;
+    geo:lat 4.576581e+01 ;
+    geo:long 4.836896e+00 .
+
+ex:Lyon266 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Kimmerling - Faure" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 19 ;
+    geo:lat 4.57543e+01 ;
+    geo:long 4.863464e+00 .
+
+ex:Lyon267 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Crépu" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 20 ;
+    geo:lat 4.575784e+01 ;
+    geo:long 4.826105e+00 .
+
+ex:Lyon268 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Opéra" ;
+    dbo:city dbr:Lyon ;
+    ex:available 39 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 41 ;
+    geo:lat 4.576761e+01 ;
+    geo:long 4.836657e+00 .
+
+ex:Lyon269 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Joffre / Vaubecour" ;
+    dbo:city dbr:Lyon ;
+    ex:available 15 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 20 ;
+    geo:lat 4.575185e+01 ;
+    geo:long 4.824734e+00 .
+
+ex:Lyon27 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Patinoire Charlemagne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 32 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 37 ;
+    geo:lat 4.574261e+01 ;
+    geo:long 4.820472e+00 .
+
+ex:Lyon270 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vénissieux - Joliot Curie / Sembat" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 25 ;
+    geo:lat 4.571545e+01 ;
+    geo:long 4.878235e+00 .
+
+ex:Lyon271 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place du Port Mouton" ;
+    dbo:city dbr:Lyon ;
+    ex:available 17 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 18 ;
+    geo:lat 4.577382e+01 ;
+    geo:long 4.80956e+00 .
+
+ex:Lyon272 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bron - Université" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 30 ;
+    geo:lat 4.572266e+01 ;
+    geo:long 4.915208e+00 .
+
+ex:Lyon273 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Louise" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 16 ;
+    geo:lat 4.575121e+01 ;
+    geo:long 4.88482e+00 .
+
+ex:Lyon274 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mairie du 7e" ;
+    dbo:city dbr:Lyon ;
+    ex:available 23 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 30 ;
+    geo:lat 4.574656e+01 ;
+    geo:long 4.842341e+00 .
+
+ex:Lyon275 a dbr:Bicycle-sharing_system ;
+    rdfs:label "L'Homme de la Roche" ;
+    dbo:city dbr:Lyon ;
+    ex:available 16 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 21 ;
+    geo:lat 4.576658e+01 ;
+    geo:long 4.82023e+00 .
+
+ex:Lyon276 a dbr:Bicycle-sharing_system ;
+    rdfs:label "La Salette" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 15 ;
+    geo:lat 4.574962e+01 ;
+    geo:long 4.795531e+00 .
+
+ex:Lyon277 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Claude Bernard Lyon I" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 16 ;
+    geo:lat 4.573814e+01 ;
+    geo:long 4.88688e+00 .
+
+ex:Lyon278 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gare de Villeurbanne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 22 ;
+    geo:lat 4.575576e+01 ;
+    geo:long 4.89153e+00 .
+
+ex:Lyon279 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Pont Masaryk" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 22 ;
+    geo:lat 4.577828e+01 ;
+    geo:long 4.810632e+00 .
+
+ex:Lyon28 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mairie du 8e" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 21 ;
+    geo:lat 4.573515e+01 ;
+    geo:long 4.872817e+00 .
+
+ex:Lyon280 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Hénon" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 22 ;
+    ex:total 22 ;
+    geo:lat 4.577976e+01 ;
+    geo:long 4.827648e+00 .
+
+ex:Lyon281 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Stade Vuillermet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 18 ;
+    geo:lat 4.57254e+01 ;
+    geo:long 4.881295e+00 .
+
+ex:Lyon282 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Croix Rousse / Perfetti" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 20 ;
+    geo:lat 4.577225e+01 ;
+    geo:long 4.819461e+00 .
+
+ex:Lyon283 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gambetta / Garibaldi" ;
+    dbo:city dbr:Lyon ;
+    ex:available 20 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 40 ;
+    geo:lat 4.575179e+01 ;
+    geo:long 4.852608e+00 .
+
+ex:Lyon284 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Quartier Général Frère" ;
+    dbo:city dbr:Lyon ;
+    ex:available 26 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 30 ;
+    geo:lat 4.574316e+01 ;
+    geo:long 4.834169e+00 .
+
+ex:Lyon285 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Cité Internationale - Résidence hôtelière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 28 ;
+    geo:lat 4.578482e+01 ;
+    geo:long 4.856512e+00 .
+
+ex:Lyon286 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Quai Paul Sédaillan" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 20 ;
+    geo:lat 4.578751e+01 ;
+    geo:long 4.814421e+00 .
+
+ex:Lyon287 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Ecole de musique" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 24 ;
+    geo:lat 4.576752e+01 ;
+    geo:long 4.874011e+00 .
+
+ex:Lyon288 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jean Jaurès / Guillotière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 10 ;
+    geo:lat 4.575258e+01 ;
+    geo:long 4.846321e+00 .
+
+ex:Lyon289 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bancel / Chevreul" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 21 ;
+    geo:lat 4.574852e+01 ;
+    geo:long 4.840525e+00 .
+
+ex:Lyon29 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vénissieux - Gare" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 22 ;
+    ex:total 25 ;
+    geo:lat 4.570853e+01 ;
+    geo:long 4.887025e+00 .
+
+ex:Lyon290 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Etats-Unis / Lévigne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 20 ;
+    geo:lat 4.573222e+01 ;
+    geo:long 4.865142e+00 .
+
+ex:Lyon291 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Aveyron" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 17 ;
+    geo:lat 4.577437e+01 ;
+    geo:long 4.832815e+00 .
+
+ex:Lyon292 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint-Luc / Saint-Joseph" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 28 ;
+    geo:lat 4.574942e+01 ;
+    geo:long 4.834752e+00 .
+
+ex:Lyon293 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Laurent Bonnevay / Astroballe" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 23 ;
+    ex:total 28 ;
+    geo:lat 4.576512e+01 ;
+    geo:long 4.909818e+00 .
+
+ex:Lyon294 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Tonkin" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 10 ;
+    geo:lat 4.577623e+01 ;
+    geo:long 4.862621e+00 .
+
+ex:Lyon295 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Martinière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 11 ;
+    geo:lat 4.576822e+01 ;
+    geo:long 4.827622e+00 .
+
+ex:Lyon296 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Maisons Neuves" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 21 ;
+    ex:total 23 ;
+    geo:lat 4.575597e+01 ;
+    geo:long 4.877414e+00 .
+
+ex:Lyon297 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Antoinette" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 21 ;
+    ex:total 21 ;
+    geo:lat 4.575365e+01 ;
+    geo:long 4.889242e+00 .
+
+ex:Lyon298 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Salengro / Vaillant" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 24 ;
+    geo:lat 4.577837e+01 ;
+    geo:long 4.879673e+00 .
+
+ex:Lyon299 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Les Halles" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 18 ;
+    geo:lat 4.576159e+01 ;
+    geo:long 4.850481e+00 .
+
+ex:Lyon3 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vaise Docks" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 19 ;
+    geo:lat 4.578651e+01 ;
+    geo:long 4.811441e+00 .
+
+ex:Lyon30 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Totem" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 16 ;
+    geo:lat 4.576364e+01 ;
+    geo:long 4.873141e+00 .
+
+ex:Lyon300 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gerland" ;
+    dbo:city dbr:Lyon ;
+    ex:available 23 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 40 ;
+    geo:lat 4.572757e+01 ;
+    geo:long 4.831197e+00 .
+
+ex:Lyon301 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mermoz / Pinel" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 23 ;
+    geo:lat 4.573077e+01 ;
+    geo:long 4.887371e+00 .
+
+ex:Lyon302 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mairie du 4e" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.57742e+01 ;
+    geo:long 4.827765e+00 .
+
+ex:Lyon303 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Oullins - Pont Blanc" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 24 ;
+    geo:lat 4.572016e+01 ;
+    geo:long 4.798332e+00 .
+
+ex:Lyon304 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Rillieux - Loup Pendu" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 18 ;
+    geo:lat 4.581597e+01 ;
+    geo:long 4.887043e+00 .
+
+ex:Lyon305 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Part-Dieu / Cuirassiers" ;
+    dbo:city dbr:Lyon ;
+    ex:available 50 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 59 ;
+    geo:lat 4.57599e+01 ;
+    geo:long 4.857573e+00 .
+
+ex:Lyon306 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Montgolfier / Château Gaillard" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 17 ;
+    geo:lat 4.577155e+01 ;
+    geo:long 4.890374e+00 .
+
+ex:Lyon307 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place de la Croix-Rousse" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 21 ;
+    ex:total 21 ;
+    geo:lat 4.577608e+01 ;
+    geo:long 4.832554e+00 .
+
+ex:Lyon308 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Lherminier / Pressensé" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 15 ;
+    geo:lat 4.577112e+01 ;
+    geo:long 4.885024e+00 .
+
+ex:Lyon309 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Challemel Lacour / Gerland" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 12 ;
+    geo:lat 4.572981e+01 ;
+    geo:long 4.838138e+00 .
+
+ex:Lyon31 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Berthelot / Villon" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 13 ;
+    geo:lat 4.57383e+01 ;
+    geo:long 4.862733e+00 .
+
+ex:Lyon310 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bourse du travail" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 27 ;
+    geo:lat 4.575965e+01 ;
+    geo:long 4.848267e+00 .
+
+ex:Lyon311 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Liberté / Part-Dieu" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 18 ;
+    geo:lat 4.575934e+01 ;
+    geo:long 4.842228e+00 .
+
+ex:Lyon312 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Ampère" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 10 ;
+    geo:lat 4.575304e+01 ;
+    geo:long 4.828246e+00 .
+
+ex:Lyon313 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Beauvoir / Marot" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 20 ;
+    geo:lat 4.573676e+01 ;
+    geo:long 4.834138e+00 .
+
+ex:Lyon314 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mairie du 6e" ;
+    dbo:city dbr:Lyon ;
+    ex:available 19 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 23 ;
+    geo:lat 4.57684e+01 ;
+    geo:long 4.849497e+00 .
+
+ex:Lyon315 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Tronchet / Anatole France" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 10 ;
+    geo:lat 4.577074e+01 ;
+    geo:long 4.856752e+00 .
+
+ex:Lyon316 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place du 8 mai 1945" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 20 ;
+    geo:lat 4.572977e+01 ;
+    geo:long 4.868167e+00 .
+
+ex:Lyon317 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Tassin - Tuileries" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 12 ;
+    geo:lat 4.576326e+01 ;
+    geo:long 4.77861e+00 .
+
+ex:Lyon318 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Jean / Epi de Blé" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 12 ;
+    geo:lat 4.577664e+01 ;
+    geo:long 4.902361e+00 .
+
+ex:Lyon319 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Salengro / Courteline" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 24 ;
+    geo:lat 4.57769e+01 ;
+    geo:long 4.876459e+00 .
+
+ex:Lyon32 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Sisley /  Dauphiné" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 17 ;
+    geo:lat 4.575283e+01 ;
+    geo:long 4.868769e+00 .
+
+ex:Lyon320 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Henri" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 13 ;
+    geo:lat 4.574819e+01 ;
+    geo:long 4.880594e+00 .
+
+ex:Lyon321 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jaurès / Thibaudière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 22 ;
+    ex:total 28 ;
+    geo:lat 4.575034e+01 ;
+    geo:long 4.845048e+00 .
+
+ex:Lyon322 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place du Château" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 25 ;
+    geo:lat 4.574952e+01 ;
+    geo:long 4.887286e+00 .
+
+ex:Lyon323 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jacquart / Denfert-Rochereau" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 14 ;
+    geo:lat 4.57759e+01 ;
+    geo:long 4.825379e+00 .
+
+ex:Lyon324 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Colin / Perroncel" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 15 ;
+    geo:lat 4.57745e+01 ;
+    geo:long 4.874052e+00 .
+
+ex:Lyon325 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jacobins" ;
+    dbo:city dbr:Lyon ;
+    ex:available 26 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 26 ;
+    geo:lat 4.576075e+01 ;
+    geo:long 4.834304e+00 .
+
+ex:Lyon326 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Cité Internationale / Interpol" ;
+    dbo:city dbr:Lyon ;
+    ex:available 15 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 27 ;
+    geo:lat 4.578231e+01 ;
+    geo:long 4.849344e+00 .
+
+ex:Lyon327 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Anatole France" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 10 ;
+    geo:lat 4.576983e+01 ;
+    geo:long 4.889631e+00 .
+
+ex:Lyon328 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Berthelot / Garibaldi" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 15 ;
+    geo:lat 4.574371e+01 ;
+    geo:long 4.847369e+00 .
+
+ex:Lyon329 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Hôpital Neurologique" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 20 ;
+    geo:lat 4.574818e+01 ;
+    geo:long 4.896957e+00 .
+
+ex:Lyon33 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Fontaines S/S - Gambetta" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 20 ;
+    geo:lat 4.583541e+01 ;
+    geo:long 4.8457e+00 .
+
+ex:Lyon330 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Rouville" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 17 ;
+    geo:lat 4.576966e+01 ;
+    geo:long 4.824612e+00 .
+
+ex:Lyon331 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Boiron Granger" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 16 ;
+    geo:lat 4.576316e+01 ;
+    geo:long 4.90048e+00 .
+
+ex:Lyon332 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint-Paul" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 23 ;
+    geo:lat 4.576627e+01 ;
+    geo:long 4.827432e+00 .
+
+ex:Lyon333 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Boussange / Austerlitz" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 18 ;
+    geo:lat 4.57755e+01 ;
+    geo:long 4.835063e+00 .
+
+ex:Lyon334 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Dumont / Jouvet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 17 ;
+    geo:lat 4.574445e+01 ;
+    geo:long 4.860887e+00 .
+
+ex:Lyon335 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Ambroise Paré" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 24 ;
+    geo:lat 4.57363e+01 ;
+    geo:long 4.883682e+00 .
+
+ex:Lyon336 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place de la Rhodiacéta" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 12 ;
+    geo:lat 4.577099e+01 ;
+    geo:long 4.80758e+00 .
+
+ex:Lyon337 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Viabert / Thiers" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 16 ;
+    geo:lat 4.576599e+01 ;
+    geo:long 4.862092e+00 .
+
+ex:Lyon338 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Jules Ferry" ;
+    dbo:city dbr:Lyon ;
+    ex:available 20 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 20 ;
+    geo:lat 4.576841e+01 ;
+    geo:long 4.859071e+00 .
+
+ex:Lyon339 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Sucrière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 20 ;
+    geo:lat 4.573618e+01 ;
+    geo:long 4.815335e+00 .
+
+ex:Lyon34 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Clinique Montplaisir" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 16 ;
+    geo:lat 4.574708e+01 ;
+    geo:long 4.860191e+00 .
+
+ex:Lyon340 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint-Jean" ;
+    dbo:city dbr:Lyon ;
+    ex:available 31 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 39 ;
+    geo:lat 4.576048e+01 ;
+    geo:long 4.826565e+00 .
+
+ex:Lyon341 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Greuze" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 18 ;
+    geo:lat 4.577385e+01 ;
+    geo:long 4.893845e+00 .
+
+ex:Lyon342 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Voyant / Chambord" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 22 ;
+    geo:lat 4.576719e+01 ;
+    geo:long 4.900599e+00 .
+
+ex:Lyon343 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Santy / Beauvisage" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 17 ;
+    geo:lat 4.573168e+01 ;
+    geo:long 4.874128e+00 .
+
+ex:Lyon344 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Faure / Danton" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 35 ;
+    geo:lat 4.575352e+01 ;
+    geo:long 4.857738e+00 .
+
+ex:Lyon345 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Château Gaillard / Bienvenus" ;
+    dbo:city dbr:Lyon ;
+    ex:available 5 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 15 ;
+    geo:lat 4.577786e+01 ;
+    geo:long 4.884244e+00 .
+
+ex:Lyon346 a dbr:Bicycle-sharing_system ;
+    rdfs:label "République / Ferrandière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 16 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 25 ;
+    geo:lat 4.576217e+01 ;
+    geo:long 4.835971e+00 .
+
+ex:Lyon347 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Sathonay" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 15 ;
+    geo:lat 4.576927e+01 ;
+    geo:long 4.83008e+00 .
+
+ex:Lyon348 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place de l'Ecole" ;
+    dbo:city dbr:Lyon ;
+    ex:available 25 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 28 ;
+    geo:lat 4.573008e+01 ;
+    geo:long 4.827823e+00 .
+
+ex:Lyon349 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Masséna" ;
+    dbo:city dbr:Lyon ;
+    ex:available 27 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 27 ;
+    geo:lat 4.576966e+01 ;
+    geo:long 4.852373e+00 .
+
+ex:Lyon35 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jaurès / Université" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 20 ;
+    geo:lat 4.574854e+01 ;
+    geo:long 4.843249e+00 .
+
+ex:Lyon350 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Cité Scolaire Internationale" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 25 ;
+    geo:lat 4.572792e+01 ;
+    geo:long 4.82356e+00 .
+
+ex:Lyon351 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Edgar Quinet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 17 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 20 ;
+    geo:lat 4.576577e+01 ;
+    geo:long 4.844732e+00 .
+
+ex:Lyon352 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Doua / Gaston Berger" ;
+    dbo:city dbr:Lyon ;
+    ex:available 20 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 30 ;
+    geo:lat 4.578099e+01 ;
+    geo:long 4.871222e+00 .
+
+ex:Lyon353 a dbr:Bicycle-sharing_system ;
+    rdfs:label "4 août 1789" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 15 ;
+    geo:lat 4.57648e+01 ;
+    geo:long 4.884271e+00 .
+
+ex:Lyon354 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Poudrette / Musset" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 18 ;
+    geo:lat 4.575788e+01 ;
+    geo:long 4.921142e+00 .
+
+ex:Lyon355 a dbr:Bicycle-sharing_system ;
+    rdfs:label "La Mulatière - Aquarium" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 22 ;
+    ex:total 24 ;
+    geo:lat 4.572737e+01 ;
+    geo:long 4.814635e+00 .
+
+ex:Lyon356 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint-Cyr" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 30 ;
+    geo:lat 4.578283e+01 ;
+    geo:long 4.807296e+00 .
+
+ex:Lyon357 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Quai Augagneur" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 19 ;
+    geo:lat 4.576197e+01 ;
+    geo:long 4.841053e+00 .
+
+ex:Lyon358 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Albigny - Gare" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 18 ;
+    geo:lat 4.587499e+01 ;
+    geo:long 4.833002e+00 .
+
+ex:Lyon359 a dbr:Bicycle-sharing_system ;
+    rdfs:label "4 Août / Racine" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 30 ;
+    geo:lat 4.576448e+01 ;
+    geo:long 4.877921e+00 .
+
+ex:Lyon36 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Cusset" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.576495e+01 ;
+    geo:long 4.901015e+00 .
+
+ex:Lyon360 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Gabriel Péri" ;
+    dbo:city dbr:Lyon ;
+    ex:available 16 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 20 ;
+    geo:lat 4.575488e+01 ;
+    geo:long 4.843675e+00 .
+
+ex:Lyon361 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Musée d'Art Contemporain" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 23 ;
+    geo:lat 4.578388e+01 ;
+    geo:long 4.85214e+00 .
+
+ex:Lyon362 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Debourg" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 20 ;
+    geo:lat 4.573175e+01 ;
+    geo:long 4.833962e+00 .
+
+ex:Lyon363 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Confluence Hôtel de Région" ;
+    dbo:city dbr:Lyon ;
+    ex:available 15 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 32 ;
+    geo:lat 4.574054e+01 ;
+    geo:long 4.81918e+00 .
+
+ex:Lyon364 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Charcot / Résidence universitaire" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 32 ;
+    ex:total 32 ;
+    geo:lat 4.575503e+01 ;
+    geo:long 4.807785e+00 .
+
+ex:Lyon365 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Cité Internationale - Tête d'Or Nord" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 21 ;
+    ex:total 22 ;
+    geo:lat 4.578461e+01 ;
+    geo:long 4.859639e+00 .
+
+ex:Lyon366 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gratte-Ciel" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 16 ;
+    geo:lat 4.576923e+01 ;
+    geo:long 4.880462e+00 .
+
+ex:Lyon367 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Confluence / Darse" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 22 ;
+    geo:lat 4.574341e+01 ;
+    geo:long 4.815854e+00 .
+
+ex:Lyon368 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Couzon - Centre" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 17 ;
+    geo:lat 4.5846e+01 ;
+    geo:long 4.832412e+00 .
+
+ex:Lyon369 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Foch" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 20 ;
+    geo:lat 4.576885e+01 ;
+    geo:long 4.844765e+00 .
+
+ex:Lyon37 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Pizay" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 22 ;
+    geo:lat 4.57672e+01 ;
+    geo:long 4.836392e+00 .
+
+ex:Lyon370 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Marseille / Université" ;
+    dbo:city dbr:Lyon ;
+    ex:available 36 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 40 ;
+    geo:lat 4.575095e+01 ;
+    geo:long 4.839267e+00 .
+
+ex:Lyon371 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Salengro / Descartes" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 15 ;
+    geo:lat 4.577625e+01 ;
+    geo:long 4.871637e+00 .
+
+ex:Lyon372 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Point du Jour / Granges" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 13 ;
+    geo:lat 4.575619e+01 ;
+    geo:long 4.802711e+00 .
+
+ex:Lyon373 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Verdun / Desgrand" ;
+    dbo:city dbr:Lyon ;
+    ex:available 21 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 21 ;
+    geo:lat 4.578405e+01 ;
+    geo:long 4.897086e+00 .
+
+ex:Lyon374 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vénissieux - Place Romand" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 20 ;
+    geo:lat 4.572575e+01 ;
+    geo:long 4.858351e+00 .
+
+ex:Lyon375 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Priest - Cité Berliet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 20 ;
+    geo:lat 4.570598e+01 ;
+    geo:long 4.900985e+00 .
+
+ex:Lyon376 a dbr:Bicycle-sharing_system ;
+    rdfs:label "11 novembre" ;
+    dbo:city dbr:Lyon ;
+    ex:available 33 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 35 ;
+    geo:lat 4.577969e+01 ;
+    geo:long 4.860009e+00 .
+
+ex:Lyon377 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Adrien Godien" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 25 ;
+    ex:total 30 ;
+    geo:lat 4.577877e+01 ;
+    geo:long 4.84107e+00 .
+
+ex:Lyon378 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Branly / Pasteur" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 15 ;
+    geo:lat 4.579159e+01 ;
+    geo:long 4.843331e+00 .
+
+ex:Lyon379 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vénissieux - Levy - Vienne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 18 ;
+    geo:lat 4.57194e+01 ;
+    geo:long 4.854802e+00 .
+
+ex:Lyon38 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Pierre Delore" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 20 ;
+    geo:lat 4.573864e+01 ;
+    geo:long 4.8524e+00 .
+
+ex:Lyon380 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Musée Africain" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 22 ;
+    geo:lat 4.575025e+01 ;
+    geo:long 4.857925e+00 .
+
+ex:Lyon381 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Berlioz / Chalinel" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 15 ;
+    geo:lat 4.580112e+01 ;
+    geo:long 4.825273e+00 .
+
+ex:Lyon382 a dbr:Bicycle-sharing_system ;
+    rdfs:label "GrandClément" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 19 ;
+    geo:lat 4.575972e+01 ;
+    geo:long 4.889947e+00 .
+
+ex:Lyon383 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Tolstoï / Florian" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 21 ;
+    geo:lat 4.576181e+01 ;
+    geo:long 4.880722e+00 .
+
+ex:Lyon384 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Sergent Berthet / Gorge de Loup" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 16 ;
+    geo:lat 4.577013e+01 ;
+    geo:long 4.805158e+00 .
+
+ex:Lyon385 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saxe / Dunoir" ;
+    dbo:city dbr:Lyon ;
+    ex:available 27 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 37 ;
+    geo:lat 4.576092e+01 ;
+    geo:long 4.845194e+00 .
+
+ex:Lyon386 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Fulchiron" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 19 ;
+    geo:lat 4.5752e+01 ;
+    geo:long 4.821662e+00 .
+
+ex:Lyon387 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Domer / Chevreul" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 12 ;
+    geo:lat 4.574667e+01 ;
+    geo:long 4.844443e+00 .
+
+ex:Lyon388 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vinatier" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 20 ;
+    geo:lat 4.574191e+01 ;
+    geo:long 4.893959e+00 .
+
+ex:Lyon389 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Beauvisage / Préssensé" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 17 ;
+    geo:lat 4.572787e+01 ;
+    geo:long 4.863442e+00 .
+
+ex:Lyon39 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Félix Faure / Vivier Merle" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 35 ;
+    geo:lat 4.575381e+01 ;
+    geo:long 4.859856e+00 .
+
+ex:Lyon390 a dbr:Bicycle-sharing_system ;
+    rdfs:label "BioParc" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 20 ;
+    geo:lat 4.574049e+01 ;
+    geo:long 4.888083e+00 .
+
+ex:Lyon391 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Quai Romain Rolland" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 17 ;
+    geo:lat 4.576204e+01 ;
+    geo:long 4.82889e+00 .
+
+ex:Lyon392 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mercière / Ferrandière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 10 ;
+    geo:lat 4.576206e+01 ;
+    geo:long 4.833206e+00 .
+
+ex:Lyon393 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Ménival / Joliot Curie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 20 ;
+    geo:lat 4.575464e+01 ;
+    geo:long 4.788149e+00 .
+
+ex:Lyon394 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Charité / Récamier" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 17 ;
+    geo:lat 4.574925e+01 ;
+    geo:long 4.829844e+00 .
+
+ex:Lyon395 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vaulx - Bibliothèque" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 15 ;
+    geo:lat 4.575707e+01 ;
+    geo:long 4.927322e+00 .
+
+ex:Lyon396 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Cyr" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 12 ;
+    geo:lat 4.579979e+01 ;
+    geo:long 4.819602e+00 .
+
+ex:Lyon397 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Les Halles" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 15 ;
+    geo:lat 4.576406e+01 ;
+    geo:long 4.849931e+00 .
+
+ex:Lyon398 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Desaix" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 25 ;
+    ex:total 28 ;
+    geo:lat 4.575726e+01 ;
+    geo:long 4.855201e+00 .
+
+ex:Lyon399 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Rue de la Baleine" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 14 ;
+    geo:lat 4.576338e+01 ;
+    geo:long 4.829011e+00 .
+
+ex:Lyon4 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Halle Tony Garnier" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 20 ;
+    geo:lat 4.573084e+01 ;
+    geo:long 4.82374e+00 .
+
+ex:Lyon40 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Condorcet / Galline" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 15 ;
+    geo:lat 4.57764e+01 ;
+    geo:long 4.867087e+00 .
+
+ex:Lyon400 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vivier Merle / Paul Bert Est" ;
+    dbo:city dbr:Lyon ;
+    ex:available 14 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 20 ;
+    geo:lat 4.575723e+01 ;
+    geo:long 4.858908e+00 .
+
+ex:Lyon401 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Caluire - Passerelle de la Paix" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 25 ;
+    geo:lat 4.578795e+01 ;
+    geo:long 4.853054e+00 .
+
+ex:Lyon402 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place des Archives" ;
+    dbo:city dbr:Lyon ;
+    ex:available 17 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 40 ;
+    geo:lat 4.574797e+01 ;
+    geo:long 4.824862e+00 .
+
+ex:Lyon403 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Lycée Marie Curie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 15 ;
+    geo:lat 4.576153e+01 ;
+    geo:long 4.89569e+00 .
+
+ex:Lyon404 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Piscine de Vaise" ;
+    dbo:city dbr:Lyon ;
+    ex:available 19 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 19 ;
+    geo:lat 4.577102e+01 ;
+    geo:long 4.79645e+00 .
+
+ex:Lyon405 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Récamier / Tête d'Or" ;
+    dbo:city dbr:Lyon ;
+    ex:available 15 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 16 ;
+    geo:lat 4.576433e+01 ;
+    geo:long 4.853492e+00 .
+
+ex:Lyon406 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Docteur Damidot" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 18 ;
+    geo:lat 4.576182e+01 ;
+    geo:long 4.886134e+00 .
+
+ex:Lyon407 a dbr:Bicycle-sharing_system ;
+    rdfs:label "République / Paufique" ;
+    dbo:city dbr:Lyon ;
+    ex:available 28 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 28 ;
+    geo:lat 4.575938e+01 ;
+    geo:long 4.835399e+00 .
+
+ex:Lyon408 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Sainte Foy - Place Saint-Luc" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 15 ;
+    geo:lat 4.574957e+01 ;
+    geo:long 4.800896e+00 .
+
+ex:Lyon409 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Carmélites" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 16 ;
+    geo:lat 4.577e+01 ;
+    geo:long 4.82927e+00 .
+
+ex:Lyon41 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Charmettes / Zola" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 23 ;
+    geo:lat 4.577074e+01 ;
+    geo:long 4.867334e+00 .
+
+ex:Lyon410 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Villeurbanne Saint-Jean" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 12 ;
+    geo:lat 4.578045e+01 ;
+    geo:long 4.904489e+00 .
+
+ex:Lyon411 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Jaurès / Saint Exupéry" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 25 ;
+    ex:total 25 ;
+    geo:lat 4.575765e+01 ;
+    geo:long 4.883471e+00 .
+
+ex:Lyon412 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Stalingrad / Meliès" ;
+    dbo:city dbr:Lyon ;
+    ex:available 20 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 24 ;
+    geo:lat 4.57767e+01 ;
+    geo:long 4.859523e+00 .
+
+ex:Lyon413 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Terreaux / Beaux Arts" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 11 ;
+    geo:lat 4.576704e+01 ;
+    geo:long 4.834284e+00 .
+
+ex:Lyon414 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bellecour / Saint Exupéry" ;
+    dbo:city dbr:Lyon ;
+    ex:available 35 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 40 ;
+    geo:lat 4.575816e+01 ;
+    geo:long 4.830435e+00 .
+
+ex:Lyon415 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Part-Dieu / Garibaldi" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 20 ;
+    geo:lat 4.576275e+01 ;
+    geo:long 4.852428e+00 .
+
+ex:Lyon416 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Varillon (funiculaire St-Just)" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 23 ;
+    ex:total 23 ;
+    geo:lat 4.57573e+01 ;
+    geo:long 4.81509e+00 .
+
+ex:Lyon417 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Créqui / Voltaire" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 27 ;
+    ex:total 30 ;
+    geo:lat 4.57567e+01 ;
+    geo:long 4.848403e+00 .
+
+ex:Lyon418 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Guillotière / Veyron" ;
+    dbo:city dbr:Lyon ;
+    ex:available "" ;
+    ex:cardPaiement "" ;
+    ex:free "" ;
+    ex:total 30 ;
+    geo:lat 4.574793e+01 ;
+    geo:long 4.856337e+00 .
+
+ex:Lyon419 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Pierre Bénite - Europe" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 15 ;
+    geo:lat 4.570326e+01 ;
+    geo:long 4.8212e+00 .
+
+ex:Lyon42 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mairie du 9e" ;
+    dbo:city dbr:Lyon ;
+    ex:available 25 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 27 ;
+    geo:lat 4.577424e+01 ;
+    geo:long 4.805666e+00 .
+
+ex:Lyon420 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vienne / Montagny" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 20 ;
+    geo:lat 4.573248e+01 ;
+    geo:long 4.85341e+00 .
+
+ex:Lyon421 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gare de Vaise" ;
+    dbo:city dbr:Lyon ;
+    ex:available 21 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 22 ;
+    geo:lat 4.577978e+01 ;
+    geo:long 4.804665e+00 .
+
+ex:Lyon422 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Ambroise Courtois" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.574529e+01 ;
+    geo:long 4.871679e+00 .
+
+ex:Lyon423 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Piaton / Condorcet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 20 ;
+    geo:lat 4.577422e+01 ;
+    geo:long 4.867504e+00 .
+
+ex:Lyon424 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gorge de Loup" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 40 ;
+    ex:total 40 ;
+    geo:lat 4.576737e+01 ;
+    geo:long 4.805628e+00 .
+
+ex:Lyon425 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Ennemond Fousseret" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 16 ;
+    geo:lat 4.576468e+01 ;
+    geo:long 4.828983e+00 .
+
+ex:Lyon426 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Garibaldi / Pensionnat" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 26 ;
+    ex:total 30 ;
+    geo:lat 4.575471e+01 ;
+    geo:long 4.853404e+00 .
+
+ex:Lyon427 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Laënnec" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 16 ;
+    geo:lat 4.574135e+01 ;
+    geo:long 4.879723e+00 .
+
+ex:Lyon43 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Childebert / Rivière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 23 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 23 ;
+    geo:lat 4.575989e+01 ;
+    geo:long 4.835799e+00 .
+
+ex:Lyon44 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Augagneur / Fosse aux Ours" ;
+    dbo:city dbr:Lyon ;
+    ex:available 30 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 40 ;
+    geo:lat 4.57572e+01 ;
+    geo:long 4.840499e+00 .
+
+ex:Lyon45 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Oullins - Mairie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 18 ;
+    geo:lat 4.5714e+01 ;
+    geo:long 4.806544e+00 .
+
+ex:Lyon46 a dbr:Bicycle-sharing_system ;
+    rdfs:label "République" ;
+    dbo:city dbr:Lyon ;
+    ex:available 16 ;
+    ex:cardPaiement false ;
+    ex:free 1 ;
+    ex:total 17 ;
+    geo:lat 4.577078e+01 ;
+    geo:long 4.872959e+00 .
+
+ex:Lyon47 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Théâtre Romain" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 12 ;
+    geo:lat 4.575836e+01 ;
+    geo:long 4.821087e+00 .
+
+ex:Lyon48 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Universités Lyon III / Lyon II" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 22 ;
+    ex:total 40 ;
+    geo:lat 4.575141e+01 ;
+    geo:long 4.836393e+00 .
+
+ex:Lyon49 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place d'Arsonval" ;
+    dbo:city dbr:Lyon ;
+    ex:available 21 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 32 ;
+    geo:lat 4.574342e+01 ;
+    geo:long 4.878921e+00 .
+
+ex:Lyon5 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gambetta / Jusserand" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 13 ;
+    geo:lat 4.575111e+01 ;
+    geo:long 4.855585e+00 .
+
+ex:Lyon50 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Villette / St-Antoine" ;
+    dbo:city dbr:Lyon ;
+    ex:available 17 ;
+    ex:cardPaiement false ;
+    ex:free 5 ;
+    ex:total 23 ;
+    geo:lat 4.576286e+01 ;
+    geo:long 4.862287e+00 .
+
+ex:Lyon51 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Joannès Ambre" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 20 ;
+    geo:lat 4.578158e+01 ;
+    geo:long 4.832858e+00 .
+
+ex:Lyon52 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Caluire - Saint-Clair" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 20 ;
+    geo:lat 4.578547e+01 ;
+    geo:long 4.847842e+00 .
+
+ex:Lyon53 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Part-Dieu / Deruelle" ;
+    dbo:city dbr:Lyon ;
+    ex:available 26 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 30 ;
+    geo:lat 4.576298e+01 ;
+    geo:long 4.855007e+00 .
+
+ex:Lyon54 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place d'Helvétie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 30 ;
+    geo:lat 4.577319e+01 ;
+    geo:long 4.841959e+00 .
+
+ex:Lyon55 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Villette" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 35 ;
+    ex:total 38 ;
+    geo:lat 4.575779e+01 ;
+    geo:long 4.861497e+00 .
+
+ex:Lyon56 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bron - Centre Nautique" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 13 ;
+    geo:lat 4.574292e+01 ;
+    geo:long 4.908621e+00 .
+
+ex:Lyon57 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Philomène Magnin" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 24 ;
+    geo:lat 4.575261e+01 ;
+    geo:long 4.858771e+00 .
+
+ex:Lyon58 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Masaryk / Saint-Cyr" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 13 ;
+    geo:lat 4.577863e+01 ;
+    geo:long 4.80712e+00 .
+
+ex:Lyon59 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Vivier Merle / Paul Bert Ouest" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 19 ;
+    geo:lat 4.575734e+01 ;
+    geo:long 4.858512e+00 .
+
+ex:Lyon6 a dbr:Bicycle-sharing_system ;
+    rdfs:label "République / Maupin" ;
+    dbo:city dbr:Lyon ;
+    ex:available 25 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 25 ;
+    geo:lat 4.575874e+01 ;
+    geo:long 4.834077e+00 .
+
+ex:Lyon60 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place de la Reconnaissance" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 32 ;
+    ex:total 32 ;
+    geo:lat 4.575444e+01 ;
+    geo:long 4.885349e+00 .
+
+ex:Lyon61 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Mendès France" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 20 ;
+    geo:lat 4.574005e+01 ;
+    geo:long 4.859416e+00 .
+
+ex:Lyon62 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Fons - 4 chemins" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 11 ;
+    geo:lat 4.570844e+01 ;
+    geo:long 4.854861e+00 .
+
+ex:Lyon63 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Guillotière / Madeleine" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 10 ;
+    ex:total 10 ;
+    geo:lat 4.575106e+01 ;
+    geo:long 4.848048e+00 .
+
+ex:Lyon64 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gailleton" ;
+    dbo:city dbr:Lyon ;
+    ex:available 16 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 16 ;
+    geo:lat 4.575345e+01 ;
+    geo:long 4.833365e+00 .
+
+ex:Lyon65 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Lebret" ;
+    dbo:city dbr:Lyon ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 14 ;
+    geo:lat 4.573565e+01 ;
+    geo:long 4.853043e+00 .
+
+ex:Lyon66 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Brotteaux / Vauban" ;
+    dbo:city dbr:Lyon ;
+    ex:available 15 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 15 ;
+    geo:lat 4.576637e+01 ;
+    geo:long 4.857002e+00 .
+
+ex:Lyon67 a dbr:Bicycle-sharing_system ;
+    rdfs:label "L'Ile Barbe" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 16 ;
+    geo:lat 4.579741e+01 ;
+    geo:long 4.829046e+00 .
+
+ex:Lyon68 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mangini" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 24 ;
+    geo:lat 4.579041e+01 ;
+    geo:long 4.816349e+00 .
+
+ex:Lyon69 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Grégory Coupet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 16 ;
+    geo:lat 4.57817e+01 ;
+    geo:long 4.8206e+00 .
+
+ex:Lyon7 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Didier - Pasteur / Saint-Cyr" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 17 ;
+    geo:lat 4.579157e+01 ;
+    geo:long 4.808535e+00 .
+
+ex:Lyon70 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Rossellini / 11 Novembre" ;
+    dbo:city dbr:Lyon ;
+    ex:available 20 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 30 ;
+    geo:lat 4.577939e+01 ;
+    geo:long 4.863095e+00 .
+
+ex:Lyon71 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Valmy" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 16 ;
+    geo:lat 4.577567e+01 ;
+    geo:long 4.805304e+00 .
+
+ex:Lyon72 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Remparts d'Ainay" ;
+    dbo:city dbr:Lyon ;
+    ex:available 21 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 24 ;
+    geo:lat 4.575309e+01 ;
+    geo:long 4.829807e+00 .
+
+ex:Lyon73 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Martinière / Monplaisir" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.574089e+01 ;
+    geo:long 4.868305e+00 .
+
+ex:Lyon74 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Célestins" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 22 ;
+    geo:lat 4.575994e+01 ;
+    geo:long 4.832072e+00 .
+
+ex:Lyon75 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Subsistances" ;
+    dbo:city dbr:Lyon ;
+    ex:available 20 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 22 ;
+    geo:lat 4.57679e+01 ;
+    geo:long 4.819817e+00 .
+
+ex:Lyon76 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Fontaines S/S - Quai JB Simon" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 20 ;
+    geo:lat 4.583247e+01 ;
+    geo:long 4.848779e+00 .
+
+ex:Lyon77 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gabriel Péri" ;
+    dbo:city dbr:Lyon ;
+    ex:available 10 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 12 ;
+    geo:lat 4.57723e+01 ;
+    geo:long 4.865761e+00 .
+
+ex:Lyon78 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Philippe de Lassalle" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 15 ;
+    ex:total 23 ;
+    geo:lat 4.577348e+01 ;
+    geo:long 4.821308e+00 .
+
+ex:Lyon79 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Lafayette / Inkermann" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 26 ;
+    ex:total 30 ;
+    geo:lat 4.576394e+01 ;
+    geo:long 4.865913e+00 .
+
+ex:Lyon8 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Marseille / Félissent" ;
+    dbo:city dbr:Lyon ;
+    ex:available 26 ;
+    ex:cardPaiement false ;
+    ex:free 4 ;
+    ex:total 30 ;
+    geo:lat 4.575299e+01 ;
+    geo:long 4.841415e+00 .
+
+ex:Lyon80 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Antonin Gourju" ;
+    dbo:city dbr:Lyon ;
+    ex:available 24 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 30 ;
+    geo:lat 4.575949e+01 ;
+    geo:long 4.83017e+00 .
+
+ex:Lyon81 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Porte des Enfants du Rhône" ;
+    dbo:city dbr:Lyon ;
+    ex:available 27 ;
+    ex:cardPaiement false ;
+    ex:free 13 ;
+    ex:total 40 ;
+    geo:lat 4.577749e+01 ;
+    geo:long 4.844871e+00 .
+
+ex:Lyon82 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Préfecture / Sarrail" ;
+    dbo:city dbr:Lyon ;
+    ex:available 6 ;
+    ex:cardPaiement false ;
+    ex:free 14 ;
+    ex:total 20 ;
+    geo:lat 4.576486e+01 ;
+    geo:long 4.841565e+00 .
+
+ex:Lyon83 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint-Romain / Berliet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 19 ;
+    ex:total 20 ;
+    geo:lat 4.574226e+01 ;
+    geo:long 4.860372e+00 .
+
+ex:Lyon84 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Lyon Métropole" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 25 ;
+    geo:lat 4.578817e+01 ;
+    geo:long 4.81856e+00 .
+
+ex:Lyon85 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Priest - Parc Technologique" ;
+    dbo:city dbr:Lyon ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 20 ;
+    geo:lat 4.571441e+01 ;
+    geo:long 4.931014e+00 .
+
+ex:Lyon86 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Etats-Unis / Viviani" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 20 ;
+    ex:total 20 ;
+    geo:lat 4.57247e+01 ;
+    geo:long 4.870766e+00 .
+
+ex:Lyon87 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Antonin Poncet" ;
+    dbo:city dbr:Lyon ;
+    ex:available 18 ;
+    ex:cardPaiement false ;
+    ex:free 0 ;
+    ex:total 40 ;
+    geo:lat 4.575676e+01 ;
+    geo:long 4.833927e+00 .
+
+ex:Lyon88 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Meissonier" ;
+    dbo:city dbr:Lyon ;
+    ex:available 13 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 16 ;
+    geo:lat 4.576609e+01 ;
+    geo:long 4.832834e+00 .
+
+ex:Lyon89 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Carnot" ;
+    dbo:city dbr:Lyon ;
+    ex:available 28 ;
+    ex:cardPaiement false ;
+    ex:free 2 ;
+    ex:total 30 ;
+    geo:lat 4.575123e+01 ;
+    geo:long 4.826891e+00 .
+
+ex:Lyon9 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Frères Lumière" ;
+    dbo:city dbr:Lyon ;
+    ex:available 4 ;
+    ex:cardPaiement false ;
+    ex:free 11 ;
+    ex:total 15 ;
+    geo:lat 4.574502e+01 ;
+    geo:long 4.866433e+00 .
+
+ex:Lyon90 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Philippe de Lassalle / Pillement" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 12 ;
+    ex:total 13 ;
+    geo:lat 4.577742e+01 ;
+    geo:long 4.820538e+00 .
+
+ex:Lyon91 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Garibaldi / Vauban" ;
+    dbo:city dbr:Lyon ;
+    ex:available 12 ;
+    ex:cardPaiement false ;
+    ex:free 8 ;
+    ex:total 20 ;
+    geo:lat 4.576669e+01 ;
+    geo:long 4.852086e+00 .
+
+ex:Lyon92 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Mémoire et Société" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 22 ;
+    ex:total 24 ;
+    geo:lat 4.575958e+01 ;
+    geo:long 4.882708e+00 .
+
+ex:Lyon93 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Garibaldi" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 11 ;
+    geo:lat 4.57707e+01 ;
+    geo:long 4.849936e+00 .
+
+ex:Lyon94 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint-Just" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 18 ;
+    geo:lat 4.575597e+01 ;
+    geo:long 4.818906e+00 .
+
+ex:Lyon95 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Longefer / Krüger" ;
+    dbo:city dbr:Lyon ;
+    ex:available 0 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 16 ;
+    geo:lat 4.573867e+01 ;
+    geo:long 4.878117e+00 .
+
+ex:Lyon96 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Bron - Mairie" ;
+    dbo:city dbr:Lyon ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 21 ;
+    ex:total 23 ;
+    geo:lat 4.573395e+01 ;
+    geo:long 4.908721e+00 .
+
+ex:Lyon97 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Gryphe / Montesquieu" ;
+    dbo:city dbr:Lyon ;
+    ex:available 7 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 25 ;
+    geo:lat 4.575191e+01 ;
+    geo:long 4.843786e+00 .
+
+ex:Lyon98 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Saint Pierre de Vaise" ;
+    dbo:city dbr:Lyon ;
+    ex:available 8 ;
+    ex:cardPaiement false ;
+    ex:free 7 ;
+    ex:total 15 ;
+    geo:lat 4.57731e+01 ;
+    geo:long 4.807814e+00 .
+
+ex:Lyon99 a dbr:Bicycle-sharing_system ;
+    rdfs:label "Place Sainte Anne" ;
+    dbo:city dbr:Lyon ;
+    ex:available 1 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 18 ;
+    geo:lat 4.575705e+01 ;
+    geo:long 4.865332e+00 .
+

@@ -1,0 +1,107 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ex: <http://www.example.com/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Valence0 a dbr:Bicycle-sharing_system ;
+    rdfs:label "134_C/ MAXIMILIANO THOUS" ;
+    dbo:city dbr:Valence ;
+    ex:available 3 ;
+    ex:cardPaiement false ;
+    ex:free 17 ;
+    ex:total 20 ;
+    geo:lat 3.948762e+01 ;
+    geo:long -3.734301e-01 .
+
+ex:Valence1 a dbr:Bicycle-sharing_system ;
+    rdfs:label "45_AVDA. GRAL. URRUTIA" ;
+    dbo:city dbr:Valence ;
+    ex:available 9 ;
+    ex:cardPaiement false ;
+    ex:free 6 ;
+    ex:total 15 ;
+    geo:lat 3.945379e+01 ;
+    geo:long -3.61946e-01 .
+
+ex:Valence2 a dbr:Bicycle-sharing_system ;
+    rdfs:label "255_SAN_VICENTE_MARTIR_TOMAS_DE_VILLAROYA" ;
+    dbo:city dbr:Valence ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 16 ;
+    ex:total 18 ;
+    geo:lat 3.944767e+01 ;
+    geo:long -3.861201e-01 .
+
+ex:Valence3 a dbr:Bicycle-sharing_system ;
+    rdfs:label "102_AVDA.RAMON LLUL" ;
+    dbo:city dbr:Valence ;
+    ex:available 11 ;
+    ex:cardPaiement false ;
+    ex:free 9 ;
+    ex:total 20 ;
+    geo:lat 3.94758e+01 ;
+    geo:long -3.46811e-01 .
+
+ex:Valence4 a dbr:Bicycle-sharing_system ;
+    rdfs:label "108_ LUIS PEIXO" ;
+    dbo:city dbr:Valence ;
+    ex:available 5 ;
+    ex:cardPaiement true ;
+    ex:free 10 ;
+    ex:total 15 ;
+    geo:lat 3.947365e+01 ;
+    geo:long -3.33703e-01 .
+
+ex:Valence5 a dbr:Bicycle-sharing_system ;
+    rdfs:label "100_AVDA. BLASCO IBAÑEZ 9" ;
+    dbo:city dbr:Valence ;
+    ex:available 2 ;
+    ex:cardPaiement false ;
+    ex:free 18 ;
+    ex:total 20 ;
+    geo:lat 3.94716e+01 ;
+    geo:long -3.38241e-01 .
+
+ex:Valence6 a dbr:Bicycle-sharing_system ;
+    rdfs:label "135_AVDA. CONSTITUCIÓN" ;
+    dbo:city dbr:Valence ;
+    ex:available 6 ;
+    ex:cardPaiement true ;
+    ex:free 14 ;
+    ex:total 20 ;
+    geo:lat 3.948567e+01 ;
+    geo:long -3.785921e-01 .
+
+ex:Valence7 a dbr:Bicycle-sharing_system ;
+    rdfs:label "270_CALLE_NINOT_ESQ_PZA_REGINO_MAS" ;
+    dbo:city dbr:Valence ;
+    ex:available 1 ;
+    ex:cardPaiement true ;
+    ex:free 15 ;
+    ex:total 16 ;
+    geo:lat 3.950004e+01 ;
+    geo:long -3.929802e-01 .
+
+ex:Valence8 a dbr:Bicycle-sharing_system ;
+    rdfs:label "259_CALLE_PIO_IX_POLIDEPORTIVO_RAMBLETA" ;
+    dbo:city dbr:Valence ;
+    ex:available 11 ;
+    ex:cardPaiement true ;
+    ex:free 7 ;
+    ex:total 20 ;
+    geo:lat 3.944543e+01 ;
+    geo:long -3.931061e-01 .
+
+ex:Valence9 a dbr:Bicycle-sharing_system ;
+    rdfs:label "155_C/ SALAMANCA" ;
+    dbo:city dbr:Valence ;
+    ex:available 17 ;
+    ex:cardPaiement false ;
+    ex:free 3 ;
+    ex:total 20 ;
+    geo:lat 3.946492e+01 ;
+    geo:long -3.631691e-01 .
+
