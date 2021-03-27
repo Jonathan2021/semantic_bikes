@@ -45,7 +45,7 @@ def getDistance(lat1,lon1,lat2,lon2):
     return distance
 
 def deleteTripleStore(city):
-    query=FusekiUpdate('http://127.0.0.1:3030','tripleStore')
+    query=FusekiUpdate('http://127.0.0.1:3030','database')
     sparql="""
 
     PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -62,7 +62,7 @@ def deleteTripleStore(city):
     query.run_sparql(sparql)
 
 def insertNewTriplestore(data):
-    query=FusekiUpdate('http://127.0.0.1:3030','tripleStore')
+    query=FusekiUpdate('http://127.0.0.1:3030','database')
     sparql="""
     PREFIX dbo: <http://dbpedia.org/ontology/>
     PREFIX dbr: <http://dbpedia.org/resource/> 
@@ -110,7 +110,7 @@ def postofficesFound():
         dpt=zip[:2]
     else:
         dpt=zip[:1]
-    fuseki_query=FusekiQuery('http://127.0.0.1:3030','tripleStore')
+    fuseki_query=FusekiQuery('http://127.0.0.1:3030','database')
     sparql_str="""
     PREFIX prop: <http://www.example.com/prop/>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -159,7 +159,7 @@ def librariesFound():
         dpt=zip[:2]
     else:
         dpt=zip[:1]
-    fuseki_query=FusekiQuery('http://127.0.0.1:3030','tripleStore')
+    fuseki_query=FusekiQuery('http://127.0.0.1:3030','database')
     sparql_str="""
     PREFIX prop: <http://www.example.com/prop/>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -198,7 +198,7 @@ def itinerary():
     if dataFrom is None or dataTo is None:
         return render_template("not_found.html",title='Oops !')
     updateTriplestore(city,parse(city).split('\n',7)[7])
-    fuseki_query=FusekiQuery('http://127.0.0.1:3030','ds')
+    fuseki_query=FusekiQuery('http://127.0.0.1:3030','database')
     sparql_str="""
     PREFIX dbo: <http://dbpedia.org/ontology/> 
     PREFIX dbr: <http://dbpedia.org/resource/> 

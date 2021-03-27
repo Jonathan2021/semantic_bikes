@@ -6,7 +6,7 @@ with open('../Data/tripleStore.ttl','r') as f:
 a=a.split('\n',10)[10]
 print(a[:200])
 
-query=FusekiUpdate('http://127.0.0.1:3030','tripleStore')
+query=FusekiUpdate('http://127.0.0.1:3030','database')
 sparql="""
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbr: <http://dbpedia.org/resource/> 
