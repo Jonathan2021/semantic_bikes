@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.example.com/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.example.com/">
+    <Prefix name="ex" IRI="http://www.example.com/"/>
+    <Prefix name="dbo" IRI="http://dbpedia.org/ontology/"/>
+    <Prefix name="dbr" IRI="http://dbpedia.org/resource/"/>
+    <Prefix name="geo" IRI="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prop" IRI="http://www.example.com/prop/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="type" IRI="http://www.example.com/type/"/>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Bicycle-sharing_system"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="type/Library"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="type/type/PostOffice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dbo:city"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="available"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="cardPaiement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="free"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="total"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="prop/Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="prop/City"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="prop/Dpt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="prop/Lattitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="prop/Longitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="prop/Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="prop/Phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="prop/Surface"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="prop/Zipcode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="geo:lat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="geo:long"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Amiens"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Avignon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Besancon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Cergy-Pontoise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Creteil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Lyon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Marseille"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Montpellier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Mulhouse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Nancy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Nantes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Nice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Rennes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Rouen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Saint-Étienne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Strasbourg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Toulouse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Valence"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Amiens"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Avignon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Besancon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Cergy-Pontoise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Creteil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Lyon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Marseille"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Montpellier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mulhouse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Nancy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Nantes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Nice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Rennes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Rouen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Saint-Étienne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Strasbourg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Toulouse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+        <NamedIndividual abbreviatedIRI="dbr:Valence"/>
+    </ClassAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="dbo:city"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dbo:city"/>
+        <Class abbreviatedIRI="dbr:Bicycle-sharing_system"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dbo:city"/>
+        <Class abbreviatedIRI="dbr:CityObject"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="available"/>
+        <Class abbreviatedIRI="dbr:Bicycle-sharing_system"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="cardPaiement"/>
+        <Class abbreviatedIRI="dbr:Bicycle-sharing_system"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="free"/>
+        <Class abbreviatedIRI="dbr:Bicycle-sharing_system"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="total"/>
+        <Class abbreviatedIRI="dbr:Bicycle-sharing_system"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Address"/>
+        <Class IRI="type/Library"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Address"/>
+        <Class IRI="type/type/PostOffice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/City"/>
+        <Class IRI="type/Library"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/City"/>
+        <Class IRI="type/type/PostOffice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Dpt"/>
+        <Class IRI="type/Library"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Dpt"/>
+        <Class IRI="type/type/PostOffice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Lattitude"/>
+        <Class IRI="type/Library"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Lattitude"/>
+        <Class IRI="type/type/PostOffice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Longitude"/>
+        <Class IRI="type/Library"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Longitude"/>
+        <Class IRI="type/type/PostOffice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Name"/>
+        <Class IRI="type/Library"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Name"/>
+        <Class IRI="type/type/PostOffice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Phone"/>
+        <Class IRI="type/type/PostOffice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Surface"/>
+        <Class IRI="type/Library"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Zipcode"/>
+        <Class IRI="type/Library"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="prop/Zipcode"/>
+        <Class IRI="type/type/PostOffice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <Class abbreviatedIRI="dbr:Bicycle-sharing_system"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="geo:lat"/>
+        <Class abbreviatedIRI="dbr:Bicycle-sharing_system"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="geo:long"/>
+        <Class abbreviatedIRI="dbr:Bicycle-sharing_system"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="available"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="cardPaiement"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="free"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="total"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="prop/Address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="prop/City"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="prop/Dpt"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="prop/Lattitude"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="prop/Longitude"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="prop/Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="prop/Phone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="prop/Surface"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="prop/Zipcode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="rdfs:label"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="geo:lat"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="geo:long"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
