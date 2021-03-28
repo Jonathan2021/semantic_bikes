@@ -1,14 +1,16 @@
 ##### WEB DATA MINING PROJECT : FIND ROUTE API #####
 
+To install and run: `make env`, then `make` or `make all`.
+
 ##### REQUIREMENTS #####
 The project has been developed in Python and is connected to the Fuseki API. Python with libraries pyfuseki, rdflib, numpy, json and flask have to be installed.
-You can do so with `pip install -r requirements.txt`, `make install` or `pipenv install` (in the root with Pipfile) + `pipenv shell`.
+You can do so with `pip install -r requirements.txt` (or `make install`) or `pipenv install` (in the root with Pipfile) + `pipenv shell` (or `make env`).
 
 You also have to install the fuseki-server triplestore manager. You can do so from [here](https://jena.apache.org/download/)
 
 ##### RUN THE PROJECT #####
 To run the project, you have to run the flask project and the fuseki server.
-You can do so by running `make` or `make all`.
+You can do so by running `make run` or `make`.
 
 ##### RUNNING FLASK SERVER #####
 To run the flask server, move to the folder WebApp Flask and run the command line `python app.py` from the *WebApp Flask* directory. The server will be running locally, using the port 5000. (http://127.0.0.1:5000).
